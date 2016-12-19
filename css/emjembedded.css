@@ -10,6 +10,15 @@
         /*background: #becddd;*/
     }
 
+/*  Evidently, moving styling from the html to css breaks it.  */
+    /*.tableWidthAuto{
+      width:auto;
+      border:0;
+      cellpadding:0;
+      cellspacing:0;
+      }*/
+
+
     .fontAwesomeHeaders{
       vertical-align: bottom;
       text-align: center;
@@ -78,13 +87,14 @@
     }
     .homeBlueSpacerFooterRow4 {
         height: 29px;
-        /*width: 1500px;*/
-        /*border: 1px solid red;*/
+        width: 800px;
+        border: 1px solid red;
     }
 
   .footerTable{
     table-layout: fixed;
-    /*width:100%;*/
+    /* makes blue footer span forever wide */
+    width:100%;
   }
 
   .facebookWhite{
@@ -116,7 +126,7 @@
     text-align: right;
   }*/
   .rowFiller{
-    width:43%;
+    /*width:43%;*/
   }
 
     /* for tablet devices */
