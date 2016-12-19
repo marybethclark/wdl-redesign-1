@@ -24,6 +24,14 @@
       text-align: center;
     }
 
+    /*.fontAwesomeHeadersToRight{
+      margin-right: -40px;
+    }*/
+
+    .blueStripes{
+      width:1200px
+    }
+
 
     .homeGreenbar {
         /*border-top: 1px solid #1f318b;*/
@@ -40,12 +48,12 @@
     }
     .homeWhitespacerHeaderRow1 {
         height: 20px;
-        background-color: pink;
+        /*background-color: pink;*/
     }
+
     .homeWhitespacerHeaderRow2 {
         height: 42px;
-        /*width:100px;*/
-        background-color: orange;
+        /*background-color: orange;*/
         }
 
 #measurementAndAuto{
@@ -125,9 +133,10 @@
     width:7%;
     text-align: right;
   }*/
-  .rowFiller{
-    /*width:43%;*/
-  }
+
+  /*.rowFiller{
+    width:43%;
+  }*/
 
     /* for tablet devices */
     @media screen and (max-width: 768px) {
