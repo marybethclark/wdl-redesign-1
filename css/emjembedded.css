@@ -29,7 +29,7 @@
     }*/
 
     .blueStripes{
-      width:1200px
+      width:100%;
     }
 
 
@@ -73,10 +73,14 @@
 
         #search{
           width: 150px;
-          height: 25px;
-          -webkit-border-radius: 5px;
+          height: 20px;
+          /*-webkit-border-radius: 5px;
           -moz-border-radius: 5px;
-          border-radius: 5px;
+          border-radius: 5px;*/
+        }
+
+        input[placeholder]{
+          font-size: 14px;
         }
 
     .homeGreenSpacerContentRow3 {
@@ -96,7 +100,7 @@
     .homeBlueSpacerFooterRow4 {
         height: 29px;
         width: 800px;
-        border: 1px solid red;
+        /*border: 1px solid red;*/
     }
 
   .footerTable{
@@ -110,6 +114,10 @@
     width: 35px;
     height: 33px;
 
+  }
+
+  .footerPipes{
+    margin-left: 20px;
   }
   /*.rowPhone{
   width:12%;
@@ -147,7 +155,7 @@
     /* for mobile devices */
     @media screen and (max-width: 414px) {
         body {
-            background: orange;
+            /*background: orange;*/
         }
         /*.responseWidth{
           max-width:414px;
