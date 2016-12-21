@@ -63,10 +63,30 @@
                                             <TD class="homeWhitespacerHeaderRow1"></TD>
                                         </TR>
                                         <TR>
-                                            <TD valign="bottom" width="auto">
+                                            <TD class="homeWhitespacerHeaderRow2"></TD>
+                                            <TD class="headerIcons" valign="bottom" width="auto">
                                                 <TABLE border=0 cellSpacing=0 cellPadding=0>
                                                     <TBODY>
                                                         <TR>
+                                                          <td>
+                                                            <form method="post" name="searchportlet" id="searchportlet" onsubmit="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;">
+                                                              <table border="0" cellspacing="0" cellpadding="0">
+                                                                  <tbody>
+                                                                      <tr>
+                                                                          <td style="padding: 12px 20px 0px 0px" align="center"></td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                          <td valign="top">
+                                                                              <div class="searchBoxContainer">
+                                                                                  <input type="text" placeholder="  &#xF002;   Search" style="font-family:Arial, FontAwesome; color:black;" id="search" class="input" name="search" maxlength="50" value="">
+                                                                                  <input id="searchButtonPositioning" name="search_submit" type="image" src="/images/buttons/search-icon.gif" alt="GO " width="auto"  border="0" style="border-style:none;" onclick="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;return false;">
+                                                                              </div>
+                                                                          </td>
+                                                                      </tr>
+                                                                  </tbody>
+                                                              </table>
+                                                          </form>
+                                                        </td>
                                                             <TD class="fontAwesomeFooters" width="40">
                                                                 <a href="http://www.wdlsystems.com/">
                                                                     <i class="fa fa-home fa-3x" aria-hidden="true" aria-label="home page" title="home page"></i>
@@ -108,7 +128,7 @@
                                                     </TBODY>
                                                 </TABLE>
                                             </TD>
-                                            <TD class="homeWhitespacerHeaderRow2"></TD>
+                                            <!-- <TD class="homeWhitespacerHeaderRow2"></TD> -->
                                         </TR>
                                         <TR>
                                             <TD vAlign=top width="auto">
@@ -129,12 +149,17 @@
                                                         <ul class="clearfix">
                                                             <li>
                                                                 <a href="#">Products <span class="arrow">&#9660;</span></a>
-
+                                                          <!-- FIRST LEVEL -->
                                                                 <ul class="sub-menu">
                                                                     <li><a href="http://www.wdlsystems.com/Blade-Computing/">Blade Computing</a>
-                                                                        <ul >
-                                                                            <li><a href="http://www.wdlsystems.com/Blade-Computing/ATCA/">ATCA</a></li>
-                                                                        </ul>
+                                                                      <!-- SECOND LEVEL -->
+                                                                        <!-- <ul>
+                                                                            <li><a href="http://www.wdlsystems.com/Blade-Computing/ATCA/">ATCA</a> -->
+                                                                              <!-- THIRD LEVEL -->
+                                                                              <!-- <ul>
+                                                                                  <li><a href="http://www.wdlsystems.com/Blade-Computing/kontron-atca/">Kontron</a></li>
+                                                                              </ul></li>
+                                                                        </ul> -->
                                                                     </li>
                                                                     <li><a href="http://www.wdlsystems.com/Box-PC/">Box PC</a></li>
                                                                     <li><a href="/Communications/">Communications</a></li>
@@ -240,10 +265,9 @@
         </tr>
         <!-- <tr> -->
         <!-- start left nav - Basic : Clean Lines -->
-        <TD valign='top' width="230px" bgColor="#0066cc">
+        <!-- <TD valign='top' width="230px" bgColor="#0066cc">
             <TABLE width="auto" border="0" cellspacing="0" cellpadding="0">
                 <TR>
-                    <!-- start left nav - Basic : Clean Lines -->
                     <td valign="top" bgcolor="#0066cc" align="left" width="230px">
                         <form method="post" name="searchportlet" id="searchportlet" onsubmit="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;">
                             <table border="0" cellspacing="0" cellpadding="0">
@@ -380,25 +404,25 @@
                                 </td>
                                 <td id="tablets" align='left' class='smalltext' width="auto"><a class='dottedlink' href='/Tablets/'>Tablets</a></td>
                             </tr>
-                            <!-- end left nav - Basic : Clean Lines -->
                         </table>
                     </td>
-        </TD>
+        </TD> -->
         <!-- end left nav - Basic : Clean Lines -->
-        <!-- *** BELOW IS THE COLUMN <td THAT ENCLOSES THE SMALLER BODY TABLE, which contains 2 columns - navbar and next to navbar -->
         <td align="center" valign="top">
             <!-- begin content area -->
             <!-- *** BELOW IS THE TABLE THAT ENCLOSES BODY IMAGES-->
-            <table align="left" width="auto" border="0" cellspacing="0" cellpadding="10">
+            <table class="tableCenter" width="auto" border="0" cellspacing="0" cellpadding="10">
                 <tbody>
                     <tr height="7">
-                        <td rowspan="4" valign="top"><img width="100" src="/images/1q03home/home_spacer.gif" alt="Embedded systems products are distributed by WDL Systems, formerly EMJ Embedded Systems" height="5" align="top" border="0"></td>
+                        <td></td>
                         <td valign="top" width="auto" height="7"></td>
                         <td valign="top" height="7"></td>
+                        <!-- place second set of product images here  -->
+
                     </tr>
                     <tr height="">
                         <td rowspan="3" colspan="2" valign="top">
-                            <table width="70" border="0" cellspacing="0" cellpadding="0">
+                            <table border="0" cellspacing="0" cellpadding="0">
                                 <tbody>
                                     <tr>
                                         <td valign="top">
@@ -456,6 +480,63 @@
                                 </tbody>
                             </table>
                         </td>
+                        <td>  <table border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                  <tr>
+                                      <td valign="top">
+                                          <table border="0" cellspacing="0" cellpadding="0">
+                                              <tbody>
+                                                  <tr>
+                                                      <td>
+                                                          <a href="/vendors/vendors.html#ampro_adlink"><img src="/images/home_banner/middlebox_top_adlink16.gif" alt="WDL Systems distributes ADLINK Measurement and Automation products (MAPS)" height="92" width="auto" border="0"></a>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>
+                                                          <table border="0" cellspacing="0" cellpadding="0">
+                                                              <tbody>
+                                                                  <tr>
+                                                                      <td>
+                                                                          <a href="http://wdlsystems.com/promotions/ADLINK/wdl_adlink_landing_home_2016.html?ck=ol43DwklAiCD622X&vid=jzXjFgklAiKD64j8&cktime=140600&promocode=&promocodeaction=overwrite"><img src="/images/home_banner/middlebox_left_adlink-IoT.jpg" alt="ADLINK for Internet of Things (IoT) Gateway and Controller" height="106" width="auto" border="0" /></a>
+                                                                      </td>
+                                                                      <td>
+                                                                          <a href="/Computer-on-Module/Carrier-Boards/ASG001-Astro-Carrier-for-Jetson-TX1_3.html"><img src="/images/home_banner/middlebox_right_astro.jpg" alt="CTI Astro Carrier for NVIDIA Jetson TX1" height="106" width="auto" border="0"></a>
+                                                                      </td>
+                                                                  </tr>
+                                                              </tbody>
+                                                          </table>
+                                                      </td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
+                                      </td>
+                                      <td valign="top">
+                                          <table border="0" cellspacing="0" cellpadding="0">
+                                              <tbody>
+                                                  <tr>
+                                                      <td><img src="/images/home_banner/featured_vendors_01.gif" alt="Featured Vendors with WDL Systems, Embedded Products Source" height="23" width="auto" align="top" border="0"></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td border="0">
+                                                          <a href="/vendors/vendors.html" border="0">
+                                                              <script language="javascript">
+                                                                  document.write(ar[randomnumber]);
+                                                              </script>
+                                                          </a>
+                                                      </td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td align="center" colspan="2"><br />
+                                          <a href="/Communications/?search=Jetson"><img src="/graphics/promotions/show_logos/Home-banner-Summer-2016-CTI-Jetson-Carriers.jpg" alt="WDL Distributes Connect Tech Carrier Boards for NVIDIA Jetson" border="0" /><br/>
+                                              <img src="/graphics/promotions/banners-below/Home-banner-InnoDisk+U-Reach-4Q16.gif" alt="WDL Distributes Connect Tech Carrier Boards for NVIDIA Jetson" usemap="#Map" border="0" /> </a>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table></td>
                     </tr>
                 </tbody>
             </table>
