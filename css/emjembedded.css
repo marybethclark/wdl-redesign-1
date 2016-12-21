@@ -1,3 +1,14 @@
+#searchButtonPositioning{
+  position: relative;
+  top: 5px;
+  left:-4px;
+}
+.tableCenter{
+  margin: 0 auto !important;
+  float: none !important;
+  padding-top: 43px;
+  padding-bottom: 50px;
+}
     .redBorder {
     border: 1px solid red;
 }
@@ -8,16 +19,24 @@
 @media screen and (min-width: 769px) {
     body {
         /*background: #becddd;*/
+        max-width: 1600px;
+        margin: 0 auto !important;
+        float: none !important;
     }
 
-/*  Evidently, moving styling from the html to css breaks it.  */
-    /*.tableWidthAuto{
-      width:auto;
-      border:0;
-      cellpadding:0;
-      cellspacing:0;
-      }*/
 
+/*  Evidently, moving certain styling from the html to css breaks it.  */
+
+.headerIcons{
+  float:right;
+}
+#searchButton{
+  float:right;
+  color:black;
+  height: 20px;
+  border:1px solid black;
+  background-color: blue;
+}
 
     .fontAwesomeFooters{
       vertical-align: bottom;
@@ -87,12 +106,14 @@
 
 .menu a {
     transition:all linear 0.15s;
-    color:#919191;
+/* pale grey */
+    /*color:#919191;*/
+    color:#black;
 }
 
 .menu li:hover > a, .menu .current-item > a {
     text-decoration:none;
-    color:#61bfc9;
+    color:#003366;
 }
 
 .menu .arrow {
@@ -124,8 +145,9 @@
 }
 
 .menu > ul > li:hover > a, .menu > ul > .current-item > a {
-    background:#2e2728;
-    /*dark brown*/
+    background:white;
+    position: relative;
+    top:-6px;
 }
 
 /*----- Bottom Level -----*/
@@ -158,11 +180,16 @@
     display:block;
     text-decoration: none;
 }
-
+/*color of sub-menu bars on hover*/
 .sub-menu li a:hover, .sub-menu .current-item a {
-    background:#3e3436;
+    background:#c3c4c7;
+    font-weight: bold;
 }
 /*  END NEW DROPDOWN NAVBAR STYLING*/
+
+.extraHomepageImages{
+  display: inline-block;
+}
 
 #measurementAndAuto{
   padding-right: 10px;
@@ -174,14 +201,14 @@
 
 /*This is defining the width of the nav bar*/
         .searchBoxContainer{
-          width: 200px;
-          height: 50px;
+          /*width: 200px;
+          height: 50px;*/
           /*border: 1px solid red;*/
         }
 
         #search{
           width: 150px;
-          height: 20px;
+          /*height: 20px;*/
           /*-webkit-border-radius: 5px;
           -moz-border-radius: 5px;
           border-radius: 5px;*/
@@ -196,7 +223,7 @@
         width: 10px;
         background-color: white;
         position: relative;
-        border: 1px solid red;
+        border-right: 1px solid #003366;
     }
     .homeGreenSpacerFooterRow3 {
         height: 3px;
@@ -209,7 +236,7 @@
         background-color: #61bfc9;
         border-bottom: 1px solid #1f318b;
         }
-    }
+
     .homeBlueSpacerFooterRow4 {
         height: 29px;
         width: 800px;
@@ -232,32 +259,8 @@
   .footerPipes{
     margin-left: 20px;
   }
-  /*.rowPhone{
-  width:12%;
-  }
-  .rowCopyright{
-    width:15%;
-  }
-  .rowLogin{
-    width:7%;
-    text-align: center;
-  }
-  .rowLogout{
-    width:7%;
-    text-align: center;
-  }
-  .rowCreditApp{
-    width:9%;
-    text-align: center;
-  }
-  .rowCart{
-    width:7%;
-    text-align: right;
-  }*/
 
-  /*.rowFiller{
-    width:43%;
-  }*/
+}
 
     /* for tablet devices */
     @media screen and (max-width: 768px) {
@@ -265,11 +268,18 @@
             background: green;
         }
 
+        .extraHomepageImages{
+          display: none;
+        }
+
     }
     /* for mobile devices */
     @media screen and (max-width: 414px) {
         body {
-            /*background: orange;*/
+            background: orange;
+        }
+        .extraHomepageImages{
+          display: none;
         }
         /*.responseWidth{
           max-width:414px;
