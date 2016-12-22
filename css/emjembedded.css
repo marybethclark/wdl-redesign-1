@@ -2,13 +2,16 @@
   position: relative;
   top: 5px;
   left:-4px;
+  height: 20px;
 }
 .tableCenter{
   margin: 0 auto !important;
   float: none !important;
   padding-top: 43px;
-  padding-bottom: 50px;
+  /*padding-bottom: 50px;*/
+  padding-bottom: 130px;
 }
+
     .redBorder {
     border: 1px solid red;
 }
@@ -19,13 +22,28 @@
 @media screen and (min-width: 769px) {
     body {
         /*background: #becddd;*/
+        height: 100%;
         max-width: 1600px;
         margin: 0 auto !important;
         float: none !important;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
     }
-
-
+/* THIS MAKES THE FOOTER MOVE TO THE BOTTOM OF THE PAGE*/
+#wrap{
+  min-height: 100%;
+}
 /*  Evidently, moving certain styling from the html to css breaks it.  */
+ #main{
+  overflow:auto;
+	/*padding-bottom: 50px;*/
+ }
+
+.headerTable{
+  table-layout: fixed;
+  /* makes blue footer span forever wide */
+  width:100%;
+}
 
 .headerIcons{
   float:right;
@@ -38,14 +56,14 @@
   background-color: blue;
 }
 
-    .fontAwesomeFooters{
+    .fontAwesomeHeaders{
       vertical-align: bottom;
       text-align: center;
+      /*float: right;
+      position: relative;
+      top: 11px;
+      right: 21px;*/
     }
-
-    /*.fontAwesomeHeadersToRight{
-      margin-right: -40px;
-    }*/
 
     .blueStripes{
       width:100%;
@@ -66,13 +84,13 @@
         /*height: 16px;*/
     }
     .homeWhitespacerHeaderRow1 {
-        height: 20px;
-        /*background-color: pink;*/
+        height: 10px;
+        background-color: pink;
     }
 
     .homeWhitespacerHeaderRow2 {
-        height: 42px;
-        /*background-color: orange;*/
+        height: 52px;
+        background-color: orange;
         }
 
 /*  BEGIN NEW DROPDOWN NAVBAR STYLING*/
@@ -101,7 +119,7 @@
 .menu li {
     margin:0px;
     list-style:none;
-    font-family:'Ek Mukta';
+    /*font-family:'Ek Mukta';*/
 }
 
 .menu a {
@@ -132,12 +150,12 @@
 .menu > ul > li > a {
     /*padding:10px 40px;*/
     padding-top: 0px;
-    padding-bottom: 1px;
+    padding-bottom: 0px;
     padding-left: 30px;
     padding-right: 30px;
     display:inline-block;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
     color:#036;
     vertical-align: top;
     font-family: Verdana, Ariel, sans-serif;
@@ -145,9 +163,8 @@
 }
 
 .menu > ul > li:hover > a, .menu > ul > .current-item > a {
-    background:white;
-    position: relative;
-    top:-6px;
+    /*background:white;*/
+    /*text-decoration: underline;*/
 }
 
 /*----- Bottom Level -----*/
@@ -201,9 +218,11 @@
 
 /*This is defining the width of the nav bar*/
         .searchBoxContainer{
-          /*width: 200px;
-          height: 50px;*/
-          /*border: 1px solid red;*/
+          width: 200px;
+          /*height: 50px;*/
+          border: 1px solid red;
+          position: relative;
+          right:25px;
         }
 
         #search{
@@ -237,22 +256,46 @@
         border-bottom: 1px solid #1f318b;
         }
 
+    .fontAwesomeFooters{
+        vertical-align: bottom;
+        text-align: center;
+        position: relative;
+        left:16px;
+        top:-80px;
+      }
+
     .homeBlueSpacerFooterRow4 {
         height: 29px;
-        width: 800px;
-        /*border: 1px solid red;*/
+        width: 200px;
+        border: 1px solid red;
     }
 
   .footerTable{
     table-layout: fixed;
-    /* makes blue footer span forever wide */
     width:100%;
+    /*margin-top: -150px;*/
+    height: 130px;
+    clear:both;
   }
 
   .facebookWhite{
     background-color: white;
     width: 35px;
     height: 33px;
+  }
+
+  .footerMailingAddress{
+    padding-left: 55px;
+    width:200px;
+  }
+
+  .footerLinkString{
+    display: block;
+    width:500px;
+    margin: 0 auto;
+    padding-top: 12%;
+    /*position: relative;
+    top: 50px;*/
 
   }
 
@@ -260,10 +303,19 @@
     margin-left: 20px;
   }
 
+  .rowCopyright{
+  float:right;
+  position: relative;
+  top: 24px;
+  padding-right: 15px;
+  padding-top: 35%;
+  }
+
 }
 
     /* for tablet devices */
-    @media screen and (max-width: 768px) {
+    /*@media screen and (max-width: 768px) {*/
+        @media screen and (max-width: 1024px) {
         body {
             background: green;
         }
@@ -288,13 +340,13 @@
     /******************************************/
     BODY {
         BORDER-BOTTOM: medium none;
-        BORDER-LEFT: medium none;
+        /*BORDER-LEFT: medium none;*/
         FONT-FAMILY: Verdana, Arial, sans-serif;
         COLOR: white;
         FONT-SIZE: 11px;
         BORDER-TOP: medium none;
         FONT-WEIGHT: normal;
-        BORDER-RIGHT: medium none
+        /*BORDER-RIGHT: medium none*/
     }
     TABLE {
         BORDER-BOTTOM: medium none;
@@ -900,8 +952,10 @@
     }
     .footer {
         FONT-FAMILY: Verdana, Arial, sans-serif;
-        COLOR: #bee;
-        FONT-SIZE: 11px;
+        /*COLOR: #bee;*/
+        COLOR: white;
+        FONT-SIZE: 12px;
+        line-height: 150%;
         FONT-WEIGHT: normal;
         TEXT-DECORATION: none;
     }
@@ -1007,28 +1061,29 @@
     A.textlink:link {
         FONT-FAMILY: Verdana, Arial, sans-serif;
         COLOR: #9f9f9f;
-        FONT-SIZE: 10px;
+        COLOR: white;
+        FONT-SIZE: 12px;
         FONT-WEIGHT: normal;
         TEXT-DECORATION: none;
     }
     A.textlink:active {
         FONT-FAMILY: Verdana, Arial, sans-serif;
         COLOR: #9f9f9f;
-        FONT-SIZE: 10px;
+        FONT-SIZE: 12px;
         FONT-WEIGHT: bolder;
         TEXT-DECORATION: none;
     }
     A.textlink:visited {
         FONT-FAMILY: Verdana, Arial, sans-serif;
-        COLOR: #9f9f9f;
-        FONT-SIZE: 10px;
+        COLOR: white;
+        FONT-SIZE: 12px;
         FONT-WEIGHT: normal;
         TEXT-DECORATION: none;
     }
     A.textlink:hover {
         FONT-FAMILY: Verdana, Arial, sans-serif;
-        COLOR: #2f4f4f;
-        FONT-SIZE: 10px;
+        COLOR: #61bfc9;
+        FONT-SIZE: 12px;
         FONT-WEIGHT: normal;
         TEXT-DECORATION: none;
     }
