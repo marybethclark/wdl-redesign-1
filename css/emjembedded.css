@@ -30,43 +30,58 @@
         border-right: 1px solid black;
     }
     /* THIS MAKES THE FOOTER MOVE TO THE BOTTOM OF THE PAGE*/
-    #wrap {
+    #container {
         min-height: 100%;
+        /*border-color: red;*/
     }
     #main {
-        overflow: auto;
-        padding-bottom: 50px;
+        /*overflow: auto;
+        padding-bottom: 50px;*/
     }
+
+    .wdlLogo{
+     padding-left: 60px;
+     padding-top: 20px;
+     padding-bottom: 10px;
+     margin-right:120px;
+     /*border: 1px solid red;*/
+    }
+
     .headerTable {
         table-layout: fixed;
         /* makes blue footer span forever wide */
         width: 100%;
+        /*border: 1px solid blue;*/
     }
     .headerIcons {
         float: right;
     }
-    #searchButton {
-        float: right;
-        color: black;
-        height: 20px;
-        border: 1px solid black;
-        background-color: blue;
-    }
+
     .fontAwesomeHeaders {
         vertical-align: bottom;
-        text-align: center;
-        padding: 0 2% 0 2%;
-        /*float: right;*/
-        position: relative;
-        bottom: -6px;
+        /*text-align: center;*/
+       padding-right: 15px;
+        float: right;
+        /*position: relative;
+        top: -55px;*/
+        /*border: 1px solid red;*/
     }
+
+    .fa-3x{
+    color:#dddddd;
+    }
+
+    .fa-3x:hover{
+    color:#aaaaaa;
+    }
+
     .blueStripes {
         width: 100%;
     }
     .homeGreenbar {
         /*border-top: 1px solid #1f318b;*/
-        border-bottom: 1px solid #1f318b;
-        background-color: #61bfc9;
+        /*border-bottom: 1px solid #1f318b;
+        background-color: #61bfc9;*/
         /*width: 1000px;*/
     }
     .homeBluebarTop {
@@ -78,16 +93,16 @@
     }
     .homeWhitespacerHeaderRow1 {
         height: 10px;
-        /*background-color: pink;*/
+        background-color: pink;
     }
     .homeWhitespacerHeaderRow2 {
         height: 52px;
-        /*background-color: orange;*/
+        background-color: orange;
     }
     /*  BEGIN NEW DROPDOWN NAVBAR STYLING*/
     .dropDownMenu {
-        position: relative;
-        top: -5px;
+        /*position: relative;
+        top: -5px;*/
     }
     .clearfix:after {
         display: block;
@@ -96,13 +111,16 @@
     /*----- Menu Outline -----*/
     .menu-wrap {
         width: 100%;
+        height:60px;
+        padding-top: 7px;
+        background-color: #244f7a;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-        background: #3e3436;
+        /*border: 1px solid red;*/
     }
-    .menu {
+    /*.menu {
         width: 1000px;
         margin: 0px auto;
-    }
+    }*/
     .menu li {
         margin: 0px;
         list-style: none;
@@ -122,6 +140,10 @@
         font-size: 11px;
         line-height: 0%;
     }
+
+    .productsHeaderNav{
+padding-left: 40px;
+    }
     /*----- Top Level -----*/
     .menu>ul>li {
         float: left;
@@ -134,18 +156,18 @@
         padding-top: 0px;
         padding-bottom: 0px;
         padding-left: 30px;
-        padding-right: 30px;
+        /*padding-right: 30px;*/
         display: inline-block;
         text-decoration: none;
-        font-size: 15px;
-        color: #036;
+        font-size: 20px;
+        color: #dddddd;
         vertical-align: top;
         font-family: Verdana, Ariel, sans-serif;
     }
     .menu>ul>li:hover>a, .menu>ul>.current-item>a {
         /*background:white;*/
         /*text-decoration: underline;*/
-        color: #0070b2;
+        color: #aaaaaa;
     }
     /*----- Bottom Level -----*/
     .menu li:hover .sub-menu {
@@ -191,14 +213,17 @@
     #tablets {
         padding-bottom: 20px;
     }
-    /*This is defining the width of the nav bar*/
+
     .searchBoxContainer {
-        width: 200px;
+        /*width: 200px;*/
         /*height: 50px;*/
+        display: inline-block;
+        padding-right: 20px;
         /*border: 1px solid red;*/
-        position: relative;
+        /*position: relative;
         right: 25px;
-        bottom: -4px;
+        left: 70%;
+        top: -40px;*/
     }
     #search {
         width: 150px;
@@ -224,492 +249,23 @@
         border-bottom: 1px solid #1f318b;
     }
     .homeGreenDropdownMenu {
-        background-color: #61bfc9;
-        border-bottom: 1px solid #1f318b;
+        /*background-color: #61bfc9;
+        border-bottom: 1px solid #1f318b;*/
+        margin: 0 auto;
     }
-    /************   BEGIN CAROUSEL SLIDER  ************ */
-    #slider {
-        width: 600px;
-        height: 200px;
-        margin: 40px auto 0;
-        overflow: visible;
-        /*dark brown*/
-        /*background-color:#362c30;
-        	border:10px solid #362c30;*/
-        background-color: white;
-        border: 10px solid white;
-        -moz-transition: all 150ms ease-in;
-        -webkit-transition: all 150ms ease-in;
-        -o-transition: all 150ms ease-in;
-        position: relative;
-        transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
+
+
+    .blackFooter{
+     background-color: #2f353b;
+     height: 200px;
+     text-align: center;
+     /*border: 1px solid red;*/
     }
-    #mask {
-        overflow: hidden;
-    }
-    #slider:hover {
-        background-color: #fff;
-        border: 10px solid #fff;
-        -webkit-animation: rotatey 400ms ease-out;
-        -moz-animation: rotatey 400ms ease-out;
-    }
-    #slider:hover #pause {
-        opacity: 1;
-    }
-    #slider:hover #progress {
-        background-color: rgba(255, 255, 255, 0.0);
-    }
-    #slider:hover ul, #slider:hover #progress, #slider:hover #overlay {
-        -moz-animation-play-state: paused;
-        -webkit-animation-play-state: paused;
-    }
-    #pause {
-        width: 600px;
-        height: 200px;
-        position: absolute;
-        top: 0;
-        opacity: 0;
-        background-image: url(http://iamceege.com/pure-css3-content-slider/images/paused.png);
-        background-position: 566px 10px;
-        background-repeat: no-repeat;
-        pointer-events: none;
-        -moz-transition: all 150ms ease-in;
-        -webkit-transition: all 150ms ease-in;
-        -o-transition: all 150ms ease-in;
-    }
-    #progress {
-        width: 1px;
-        height: 1px;
-        background-color: #ffd000;
-        -moz-animation: progress 18s infinite;
-        -webkit-animation: progress 18s infinite;
-        position: relative;
-        top: -1px;
-        -moz-transition: all 150ms ease-in;
-        -webkit-transition: all 150ms ease-in;
-        -o-transition: all 150ms ease-in;
-    }
-    #overlay {
-        width: 600px;
-        height: 200px;
-        position: absolute;
-        top: 0;
-        background-image: url(http://iamceege.com/pure-css3-content-slider/images/overlay.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        pointer-events: none;
-        -moz-transition: all 150ms ease-in;
-        -webkit-transition: all 150ms ease-in;
-        -o-transition: all 150ms ease-in;
-        opacity: 0.5;
-        -moz-animation: overlay-fade 18s infinite;
-        -webkit-animation: overlay-fade 18s infinite;
-    }
-    #slider ul {
-        width: 2400px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        -moz-animation: slide-animation 18s infinite;
-        -webkit-animation: slide-animation 18s infinite;
-        position: relative;
-        left: 0px;
-    }
-    #slider li {
-        display: inline;
-        width: 600px;
-        height: 200px;
-        margin: 0;
-        padding: 0;
-        float: left;
-        position: relative;
-        background-image: url(http://iamceege.com/pure-css3-content-slider/images/loader.gif);
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-    }
-    #slider li:last-of-type {
-        /*dark brown*/
-        /*background-color:#362c30;*/
-        background-color: white;
-    }
-    #slider li a {
-        display: block;
-        text-decoration: none;
-    }
-    #slider li span {
-        display: block;
-        width: 560px;
-        padding: 15px 20px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        /*dark brown text area*/
-        /*background-color:rgba(54,44,48,0.6);*/
-        background-color: white;
-        border-top: 1px solid #362c30;
-        text-shadow: 1px 1px 1px #362c30;
-        pointer-events: none;
-        text-align: left;
-    }
-    #slider-shadow {
-        width: 100%;
-        height: 260px;
-        background-image: url(http://iamceege.com/pure-css3-content-slider/images/slider-shadow.png);
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        margin: 10px auto 0;
-    }
-    @-webkit-keyframes slide-animation {
-        0% {
-            opacity: 0;
-        }
-        2% {
-            opacity: 1;
-        }
-        20% {
-            left: 0px;
-            opacity: 1;
-        }
-        22.5% {
-            opacity: 0.6;
-        }
-        25% {
-            left: -600px;
-            opacity: 1;
-        }
-        45% {
-            left: -600px;
-            opacity: 1;
-        }
-        47.5% {
-            opacity: 0.6;
-        }
-        50% {
-            left: -1200px;
-            opacity: 1;
-        }
-        70% {
-            left: -1200px;
-            opacity: 1;
-        }
-        72.5% {
-            opacity: 0.6;
-        }
-        75% {
-            left: -1800px;
-            opacity: 1;
-        }
-        95% {
-            opacity: 1;
-        }
-        98% {
-            left: -1800px;
-            opacity: 0;
-        }
-        100% {
-            left: 0px;
-            opacity: 0;
-        }
-    }
-    @-moz-keyframes slide-animation {
-        0% {
-            opacity: 0;
-        }
-        2% {
-            opacity: 1;
-        }
-        20% {
-            left: 0px;
-            opacity: 1;
-        }
-        22.5% {
-            opacity: 0.6;
-        }
-        25% {
-            left: -600px;
-            opacity: 1;
-        }
-        45% {
-            left: -600px;
-            opacity: 1;
-        }
-        47.5% {
-            opacity: 0.6;
-        }
-        50% {
-            left: -1200px;
-            opacity: 1;
-        }
-        70% {
-            left: -1200px;
-            opacity: 1;
-        }
-        72.5% {
-            opacity: 0.6;
-        }
-        75% {
-            left: -1800px;
-            opacity: 1;
-        }
-        95% {
-            opacity: 1;
-        }
-        98% {
-            left: -1800px;
-            opacity: 0;
-        }
-        100% {
-            left: 0px;
-            opacity: 0;
-        }
-    }
-    @-webkit-keyframes progress {
-        0% {
-            width: 0px;
-            opacity: 0;
-        }
-        2% {
-            width: 0px;
-            opacity: 1;
-        }
-        20% {
-            width: 600px;
-            opacity: 1;
-        }
-        22.5% {
-            width: 600px;
-            opacity: 0;
-        }
-        22.59% {
-            width: 0px;
-        }
-        25% {
-            width: 0px;
-            opacity: 1;
-        }
-        45% {
-            width: 600px;
-            opacity: 1;
-        }
-        47.5% {
-            width: 600px;
-            opacity: 0;
-        }
-        47.59% {
-            width: 0px;
-        }
-        50% {
-            width: 0px;
-            opacity: 1;
-        }
-        70% {
-            width: 600px;
-            opacity: 1;
-        }
-        72.5% {
-            width: 600px;
-            opacity: 0;
-        }
-        72.59% {
-            width: 0px;
-        }
-        75% {
-            width: 0px;
-            opacity: 1;
-        }
-        95% {
-            width: 600px;
-            opacity: 1;
-        }
-        98% {
-            width: 600px;
-            opacity: 0;
-        }
-        100% {
-            width: 0px;
-            opacity: 0;
-        }
-    }
-    @-moz-keyframes progress {
-        0% {
-            width: 0px;
-            opacity: 0;
-        }
-        2% {
-            width: 0px;
-            opacity: 1;
-        }
-        20% {
-            width: 600px;
-            opacity: 1;
-        }
-        22.5% {
-            width: 600px;
-            opacity: 0;
-        }
-        22.59% {
-            width: 0px;
-        }
-        25% {
-            width: 0px;
-            opacity: 1;
-        }
-        45% {
-            width: 600px;
-            opacity: 1;
-        }
-        47.5% {
-            width: 600px;
-            opacity: 0;
-        }
-        47.59% {
-            width: 0px;
-        }
-        50% {
-            width: 0px;
-            opacity: 1;
-        }
-        70% {
-            width: 600px;
-            opacity: 1;
-        }
-        72.5% {
-            width: 600px;
-            opacity: 0;
-        }
-        72.59% {
-            width: 0px;
-        }
-        75% {
-            width: 0px;
-            opacity: 1;
-        }
-        95% {
-            width: 600px;
-            opacity: 1;
-        }
-        98% {
-            width: 600px;
-            opacity: 0;
-        }
-        100% {
-            width: 0px;
-            opacity: 0;
-        }
-    }
-    @-webkit-keyframes rotatey {
-        0% {
-            transform: rotate(0deg);
-            -ms-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -webkit-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
-        }
-        25% {
-            transform: rotate(1deg);
-            -ms-transform: rotate(1deg);
-            -moz-transform: rotate(1deg);
-            -webkit-transform: rotate(1deg);
-            -o-transform: rotate(1deg);
-        }
-        50% {
-            transform: rotate(-1deg);
-            -ms-transform: rotate(-1deg);
-            -moz-transform: rotate(-1deg);
-            -webkit-transform: rotate(-1deg);
-            -o-transform: rotate(-1deg);
-        }
-        100% {
-            transform: rotate(0deg);
-            -ms-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -webkit-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
-        }
-    }
-    @-moz-keyframes rotatey {
-        0% {
-            transform: rotate(0deg);
-            -ms-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -webkit-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
-        }
-        25% {
-            transform: rotate(1deg);
-            -ms-transform: rotate(1deg);
-            -moz-transform: rotate(1deg);
-            -webkit-transform: rotate(1deg);
-            -o-transform: rotate(1deg);
-        }
-        50% {
-            transform: rotate(-1deg);
-            -ms-transform: rotate(-1deg);
-            -moz-transform: rotate(-1deg);
-            -webkit-transform: rotate(-1deg);
-            -o-transform: rotate(-1deg);
-        }
-        100% {
-            transform: rotate(0deg);
-            -ms-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -webkit-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
-        }
-    }
-    @-webkit-keyframes overlay-fade {
-        0% {
-            opacity: 0;
-        }
-        2% {
-            opacity: 0.5;
-        }
-        95% {
-            opacity: 0.5;
-        }
-        98% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-    @-moz-keyframes overlay-fade {
-        0% {
-            opacity: 0;
-        }
-        2% {
-            opacity: 0.5;
-        }
-        95% {
-            opacity: 0.5;
-        }
-        98% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-    #slider ul li span h2 {
-        font-size: 24px;
-        line-height: 24px;
-        color: #fff;
-        font-weight: normal;
-        font-family: 'Communist-Regular';
-        text-shadow: 1px 1px 1px #362c30;
-    }
-    /************   END CAROUSEL SLIDER  ************ */
+
     .fontAwesomeFooters {
-        vertical-align: bottom;
-        text-align: center;
-        position: relative;
-        left: 16px;
-        top: -80px;
+        padding-top: 90px;
+        display: inline-block;
+        /*border: 1px solid red;*/
     }
     .homeBlueSpacerFooterRow4 {
         height: 29px;
@@ -724,31 +280,56 @@
         clear: both;
     }
     .facebookWhite {
-        background-color: white;
-        width: 35px;
-        height: 33px;
+        /*background-color: white;*/
+       display: inline-block;
     }
     .footerMailingAddress {
-        padding-left: 55px;
+        margin-left:40px;
+        /*padding-top: 50px;*/
         width: 200px;
+        display: inline-block;
+        text-align: left;
+        /*border: 1px solid red;*/
     }
+
+    .footerPhoneEmail {
+        margin-left:15px;
+        /*padding-top: 50px;*/
+        display: inline-block;
+        text-align: left;
+        /*border: 1px solid red;*/
+    }
+
+    A:link.whiteLink{
+     color:white;
+    }
+
     .footerLinkString {
         display: block;
         width: 500px;
         margin: 0 auto;
         padding-top: 10%;
+        background-color: #2f353b;
         /*position: relative;
         top: 50px;*/
     }
+
     .footerPipes {
-        margin-left: 20px;
+        margin-left: 50px;
+        margin-right: 10px;
+        display: inline-block;
     }
+
     .rowCopyright {
         float: right;
+        /*padding-top: 160px;*/
+        display: inline;
         position: relative;
-        top: 24px;
-        padding-right: 15px;
-        padding-top: 35%;
+        bottom: -35px;
+        /*border-color: red;*/
+    }
+    .footer.rowCopyright{
+     color:#aaaaaa;
     }
 }
 
@@ -844,7 +425,8 @@ A:link {
     FONT-SIZE: 11px;
     BORDER-TOP: medium none;
     FONT-WEIGHT: normal;
-    BORDER-RIGHT: medium none
+    BORDER-RIGHT: medium none;
+    text-decoration:none;
 }
 
 A:active {
@@ -855,7 +437,8 @@ A:active {
     FONT-SIZE: 11px;
     BORDER-TOP: medium none;
     FONT-WEIGHT: bolder;
-    BORDER-RIGHT: medium none
+    BORDER-RIGHT: medium none;
+    text-decoration: none;
 }
 
 A:visited {
@@ -1148,7 +731,7 @@ A.headertitle:hover {
 .vendortitle {
     FONT-FAMILY: Verdana, Arial, sans-serif;
     COLOR: black;
-    FONT-SIZE: 15px;
+    FONT-SIZE: 25px;
     font-weight: lighter;
     TEXT-DECORATION: none;
     float:left;
@@ -1157,16 +740,30 @@ A.headertitle:hover {
 }
 
 .manufact_logo_wrapper{
-   width: 100%;
-   float: left;
+/* PREVIOUS METHOD */
+   /*float: left;
+   margin-left: 40px;
+   margin-right: 20px;*/
+   text-align: center;
+   margin-top: 60px;
+
+
 }
 
 .logos{
-   /*width: 16%;*/
-   height:200px;
-   margin: 2%;
-   text-align: center;
+  /* PREVIOUS METHOD */
+   /*display: flex;
+   align-items: center;
+   height:150px;
    float: left;
+   margin-left: 10px;
+   margin-right: 10px;*/
+   display: inline-block;
+   width: 200px;
+   height: 150px;
+   margin-left: 5px;
+   margin-right: 5px;
+   margin-bottom: -90px;
 }
 
 .aisletitle {
@@ -1484,7 +1081,7 @@ A.footer:active {
 
 A.footer:visited {
     FONT-FAMILY: Verdana, Arial, sans-serif;
-    COLOR: #bee;
+    COLOR: #dddddd;
     FONT-SIZE: 10px;
     FONT-WEIGHT: normal;
     TEXT-DECORATION: none;
@@ -1500,7 +1097,7 @@ A.footer:hover {
 
 .footer {
     FONT-FAMILY: Verdana, Arial, sans-serif;
-    /*COLOR: #bee;*/
+  background-color: #2f353b;
     COLOR: white;
     FONT-SIZE: 12px;
     line-height: 150%;
@@ -1647,7 +1244,7 @@ A.textlink:visited {
 
 A.textlink:hover {
     FONT-FAMILY: Verdana, Arial, sans-serif;
-    COLOR: #61bfc9;
+    COLOR: #aaaaaa;
     FONT-SIZE: 12px;
     FONT-WEIGHT: normal;
     TEXT-DECORATION: none;
