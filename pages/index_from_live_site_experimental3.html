@@ -9,13 +9,18 @@
     <script language='JavaScript' type='text/javascript'>
         window.status = 'Loading...';
     </script>
-    <script type='text/javascript' src='/ui/jquery/jquery-1.11.3.min.js?NS_VER=2016.2.0&minver=79'></script>
+    <script type='text/javascript' src='/js/jquery-1.11.3.min.js?NS_VER=2016.2.0&minver=79'></script>
     <script type='text/javascript' src='/uirefresh/script/jquery_isolation.js?NS_VER=2016.2.0&minver=79'></script>
     <script type='text/javascript' src='/javascript/NLUtil.jsp?NS_VER=2016.2.0&minver=79&locale=en_US'></script>
     <script type='text/javascript' src='/javascript/NLUtil.js?NS_VER=2016.2.0&minver=79'></script>
     <script language='JavaScript' type='text/javascript'>
         window.status = '';
     </script>
+    <!-- ****  BEGIN foucs IMAGE CAROUSEL  **** -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/js/jquery.foucs.js" type="text/javascript"></script>
+    <link href="css/foucs.css" rel="stylesheet">
+     <!-- ****  END foucs IMAGE CAROUSEL above  **** -->
     <link rel='stylesheet' href='http://www.wdlsystems.com/core/styles/pagestyles.nl?ct=100&bglt=E6EDF5&bgmd=E6EDF5&bgdk=677789&bgon=013875&bgoff=52add9&bgbar=013875&tasktitletext=dedede&crumbtext=dedede&headertext=dedede&ontab=000000&offtab=ffffff&text=000000&link=000000&bgbody=FFFFFF&bghead=FFFFFF&portlet=3583b5&portletlabel=ffffff&bgbutton=FFE599&bgrequiredfld=FFFFE5&font=Arial%2CHelvetica%2Csans-serif&size_site_content=9pt&size_site_title=9pt&size=1.0&nlinputstyles=T&accessibility=F&NS_VER=2016.2.0'>
     <!-- <link rel="stylesheet" href="https://checkout.netsuite.com/css/emjembedded.css">
 <link rel="stylesheet" href="https://checkout.netsuite.com/css/cart-styles.css"> -->
@@ -43,11 +48,8 @@
                 <A href="/wdlsystems">
                     <IMG class="wdlLogo" border=0 alt="WDL systems" width="178" align=top src="/images/headers/wdl_logo.gif">
                 </A>
-
-            </div>
-
-
-            <!-- <div class="homeGreenDropdownMenu"> -->
+               </div>
+ <!-- <div class="homeGreenDropdownMenu"> -->
             <!-- PLACE NEW DROPDOWN NAVBAR HERE -->
             <div class="menu-wrap dropDownMenu">
                 <nav class="menu">
@@ -89,7 +91,6 @@
                         </li>
                         <li>
                             <a href="#">Markets <span class="arrow">&#9660;</span></a>
-
                             <ul class="sub-menu">
                                 <li><a href="#">In Cinemas Now</a></li>
                                 <li><a href="#">Coming Soon</a></li>
@@ -135,11 +136,11 @@
                     <div class="searchBoxContainer">
                         <form method="post" name="searchportlet" id="searchportlet" onsubmit="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;">
                             <div>
-                                <input type="text" placeholder="  &#xF002;   Search" style="font-family:Arial, FontAwesome; color:black;" id="search" class="input" name="search" maxlength="50" value="">
-                                <input id="searchButtonPositioning" name="search_submit" type="image" src="/images/buttons/search-icon.gif" alt="GO " width="auto" border="0" style="border-style:none;" onclick="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;return false;">
-                            </div>
+                                <input type="text" placeholder="      Search" style="font-family:Arial, FontAwesome; color:black;" id="search" class="input" name="search"  maxlength="50" value="">
 
-                        </form>
+                                <input id="searchButtonPositioning" name="search_submit" type="image" src="/images/buttons/search_icon_white.gif" alt="search"  onclick="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;return false;">
+                            </div>
+                         </form>
                     </div>
                 </div>
             </div>
@@ -151,11 +152,29 @@
         <!-- WDL v2.0 TEST: End Logo and Tabs -->
         </td>
         <!-- end left nav - Basic : Clean Lines -->
-        <!-- begin content area -->
-        <td align="center" valign="top">
+   <!-- begin content area -->
+<!-- ****  BEGIN foucs IMAGE CAROUSEL  **** -->
+   <div id="mainFoucs">
+  <div id="index_b_hero">
+    <div class="hero-wrap">
+      <ul class="heros clearfix">
+        <li class="hero"> <a href="#" target="_blank" title="Description 1"> <img src="/images/home_banner/arbor_home.jpg" class="thumb" alt="Alt 1" /> </a> </li>
+        <li class="hero"> <a href="#" target="_blank" title="Description 2"> <img src="/images/home_banner/middlebox_right_astro.jpg" class="thumb" alt="Alt 2" /> </a> </li>
+        <li class="hero"> <a href="#" target="_blank" title="Description 3"> <img src="/images/home_banner/seco_home.jpg" class="thumb" alt="Alt 3" /> </a> </li>
+        <li class="hero"> <a href="#" target="_blank" title="Description 4"> <img src="/images/home_banner/spark_50.jpg" class="thumb" alt="Alt 4" /> </a> </li>
+      </ul>
+    </div>
+    <div class="helper">
+      <div class="mask-left"> </div>
+      <div class="mask-right"> </div>
+      <a href="#" class="prev icon-arrow-a-left"></a> <a href="#" class="next icon-arrow-a-right"></a> </div>
+  </div>
+</div>
+<!-- ****  END foucs IMAGE CAROUSEL  **** -->
+        <!-- <td align="center" valign="top"> -->
 
             <!-- *** BELOW IS THE TABLE THAT ENCLOSES BODY IMAGES-->
-            <table class="tableCenter" width="auto" border="0" cellspacing="0" cellpadding="10">
+            <!-- <table class="tableCenter" width="auto" border="0" cellspacing="0" cellpadding="10">
                 <tbody>
                     <tr>
                         <td rowspan="3" colspan="2" valign="top">
@@ -175,7 +194,7 @@
                                                                 <tbody>
                                                                     <tr>
                                                                         <td>
-                                                                            <a href="http://wdlsystems.com/promotions/ADLINK/wdl_adlink_landing_home_2016.html?ck=ol43DwklAiCD622X&vid=jzXjFgklAiKD64j8&cktime=140600&promocode=&promocodeaction=overwrite"><img src="/images/home_banner/middlebox_left_adlink-IoT.jpg" alt="ADLINK for Internet of Things (IoT) Gateway and Controller" height="106" border="0" /></a>
+                                                      <a href="http://wdlsystems.com/promotions/ADLINK/wdl_adlink_landing_home_2016.html?ck=ol43DwklAiCD622X&vid=jzXjFgklAiKD64j8&cktime=140600&promocode=&promocodeaction=overwrite"><img src="/images/home_banner/middlebox_left_adlink-IoT.jpg" alt="ADLINK for Internet of Things (IoT) Gateway and Controller" height="106" border="0" /></a>
                                                                         </td>
                                                                         <td>
                                                                             <a href="/Computer-on-Module/Carrier-Boards/ASG001-Astro-Carrier-for-Jetson-TX1_3.html"><img src="/images/home_banner/middlebox_right_astro.jpg" alt="CTI Astro Carrier for NVIDIA Jetson TX1" height="106" width="auto" border="0"></a>
@@ -278,7 +297,7 @@
                     </tr>
                 </tbody>
             </table>
-            <br>
+            <br> -->
             <!-- end content area -->
         </td>
         <!-- <td class="homeGreenSpacerContentRow3"></td> -->
@@ -327,9 +346,9 @@
             <div><span>USA</span></div>
         </div>
         <div class= "footer footerPhoneEmail">
-            <div><span>1-800-548-2319</span></div>
-            <div><span>Sales: <a class="whiteLink" href="sales@wdlsystems.com">sales@wdlsystems.com</a></span></div>
-            <div><span>Support: <a class="whiteLink" href="support@wdlsystems.com">support@wdlsystems.com</a></span></div>
+            <div><span>1.800.548.2319</span></div>
+            <div><span>Sales: <a class="whiteLink" href="mailto:sales@wdlsystems.com">sales@wdlsystems.com</a></span></div>
+            <div><span>Support: <a class="whiteLink" href="mailto:support@wdlsystems.com">support@wdlsystems.com</a></span></div>
         </div>
             <div class="footerPipes">
                 <A class=textlink href="/index.html">home</A> |
@@ -345,6 +364,11 @@
 
  <!-- below closes footer -->
 </div>
+<script type="text/javascript">
+// interval sets Auto slide interval (how long each image appears) in ms
+// animateTime sets animation time (how quickly images slide) in ms
+        $.foucs({interval:3000,animateTime:1000, direction: 'right' });
+    </script>
 </body>
 </html>
 

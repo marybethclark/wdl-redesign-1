@@ -1,0 +1,260 @@
+footer
+body {
+font-family: 'Verdana',  sans-serif;
+}
+
+footer
+a {
+text-decoration: none;
+font-size: 13px !important;
+/*-webkit-transition: all .2s linear;
+-moz-transition: all .2s linear;
+-ms-transition: all .2s linear;
+-o-transition:  all .2s linear;
+transition: all .2s linear;*/
+
+}
+footer
+
+.clear {
+clear: both;
+}
+
+footer {
+background-color: #2E3639;
+/*position: absolute;
+right:0;
+bottom:0;
+left:0;*/
+/*width:100%;*/
+z-index: 1;
+}
+
+footer > ul {
+list-style: none outside none;
+margin: 0 auto;
+max-width: 1200px;
+overflow: hidden;
+padding: 25px 0;
+position: relative;
+width: 95%;
+}
+
+footer > ul li {
+float: left;
+padding: 20px 15px;
+width: 33.3%;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+/* > ul li:first-child {
+padding-left: 0;
+}
+*/
+
+/* > ul li:nth-child(3) {
+padding-right: 0;
+}
+*/
+
+footer > ul li .icon {
+color: #999999;
+float: left;
+font-size: 80px;
+line-height: 80px;
+}
+
+footer > ul li .text {
+color: #848889;
+font-size: 13px;
+line-height: 20px;
+margin-left: 10px;
+position: relative;
+text-align: left;
+}
+
+/*.text{
+color: #FFFFFF;
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+*/
+footer input{
+ border:initial;
+ padding:initial;
+}
+
+#newsletterButtonPositioning{
+ position: relative;
+ top:10px;
+ right:5px;
+ border-radius: 0 2px 2px 0;
+}
+
+footer
+ .text H4{
+ color: #FFFFFF;
+ font-size: 20px;
+ font-weight: bold;
+ margin-bottom: 10px;
+}
+footer
+.text a {
+/*border-bottom: 1px dotted transparent;*/
+
+color:#848889;
+/*font-weight: bold;*/
+}
+
+/*  REMOVES BULLETS FROM contact, footer links,  and subscribe "columns"*/
+ ul{
+  list-style: none;
+ }
+
+footer .bar {
+background-color: #1E2629;
+padding: 20px 0;
+}
+
+footer .bar-wrap {
+font-size: 12px;
+margin: 0 auto;
+max-width: 1150px;
+position: relative;
+width: 95%;
+}
+
+footer
+.links {
+float: left;
+list-style: none outside none;
+position: relative;
+}
+
+footer
+.links li {
+float: left;
+margin-right: 25px;
+}
+
+footer
+.links a {
+color: #778888;
+}
+
+footer
+.links a:hover {
+color: #FFFFFF;
+}
+
+footer
+.social {
+position: absolute;
+right: 10%;
+}
+
+/*footer a {
+color: #778888;
+margin-left: 20px;
+}*/
+
+footer a .fa-3x{
+color: #778888;
+padding-right: 10px;
+}
+
+footer a:hover {
+color: #FFFFFF;
+}
+
+footer a:hover .fa-3x{
+color: #FFFFFF;
+}
+
+footer
+.social .icon {
+display: inline-block;
+font-size: 30px;
+margin-right: 5px;
+vertical-align: middle;
+-webkit-transition: -webkit-transform .3s linear;
+-moz-transition: -moz-transform .3s linear;
+-ms-transition: -ms-transform .3s linear;
+-o-transition:  -o-transform .3s linear;
+transition: transform .3s linear;
+}
+
+footer .social .icon .fa-3x{
+display: inline-block;
+font-size: 30px !important;
+margin-right: 5px;
+vertical-align: middle;
+-webkit-transition: -webkit-transform .3s linear;
+-moz-transition: -moz-transform .3s linear;
+-ms-transition: -ms-transform .3s linear;
+-o-transition:  -o-transform .3s linear;
+transition: transform .3s linear;
+}
+
+footer
+.social .info {
+display: inline-block;
+}
+footer
+.social .info {
+display: block;
+}
+footer
+.social .info .num {
+display: block;
+}
+footer
+.copyright {
+color: #535f5f;
+/*margin-left: 20px;*/
+margin-top: 10px
+}
+
+/*responsive styling - currently not overriding regular styling*/
+footer
+@media screen and (max-width: 1000px){
+.links,  .social,  .copyright{
+float:none;
+text-align:center;
+}
+footer
+.social {
+position:relative;
+margin:10px 0;
+}
+footer
+.links li {
+display:inline-block;
+float:none;
+}
+footer
+.bar {
+position:relative;
+}
+footer
+.bar-wrap {
+margin-bottom:0;
+}
+
+}
+
+@media screen and (max-width: 835px)  {
+footer > ul li {
+float:none;
+width:auto;
+}
+
+}
+footer
+@media screen and (max-width: 768px)  {
+.links li {
+margin-right:5px;
+}
