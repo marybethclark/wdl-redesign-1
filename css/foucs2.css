@@ -109,8 +109,7 @@ a:hover {
 .mainFoucs
 
 #main {
- /*overflow must be commented out or else the dropdowns are hidden by the foucs slider*/
-  /*overflow: hidden;*/
+  overflow: hidden;
   zoom: 1;
   position: relative;
 }
@@ -187,6 +186,8 @@ overflow: hidden;
   overflow: hidden;
   left: 1920px;
 }
+
+/* OPACITY BELOW ADJUSTS LEFT/RIGHT SLIDER IMAGES*/
 .mainFoucs
 
 #index_b_hero .mask-right, .mainFoucs

@@ -26,23 +26,26 @@ background-color: #2E3639;
 right:0;
 bottom:0;
 left:0;*/
-/*width:100%;*/
+width:100%;
 z-index: 1;
 }
 
 footer > ul {
 list-style: none outside none;
 margin: 0 auto;
-max-width: 1200px;
+/*max-width: 1400px;*/
+width: 100%;
+max-width: 1250px;
 overflow: hidden;
-padding: 25px 0;
+padding: 0 50px 0 70px;
+box-sizing: border-box;
 position: relative;
-width: 95%;
+
 }
 
 footer > ul li {
 float: left;
-padding: 20px 15px;
+padding: 40px 25px 30px 25px;
 width: 33.3%;
 -webkit-box-sizing:border-box;
 -moz-box-sizing:border-box;
@@ -66,7 +69,7 @@ font-size: 80px;
 line-height: 80px;
 }
 
-footer > ul li .text {
+footer > ul li .footerColumnText {
 color: #848889;
 font-size: 13px;
 line-height: 20px;
@@ -95,14 +98,14 @@ footer input{
 }
 
 footer
- .text H4{
+ .footerColumnText H4{
  color: #FFFFFF;
  font-size: 20px;
  font-weight: bold;
  margin-bottom: 10px;
 }
 footer
-.text a {
+.footerColumnText a {
 /*border-bottom: 1px dotted transparent;*/
 
 color:#848889;
@@ -114,17 +117,22 @@ color:#848889;
   list-style: none;
  }
 
-footer .bar {
-background-color: #1E2629;
-padding: 20px 0;
+footer .barWrapper {
+background-color:#1E2629;
+height:65px;
+/*padding: 20px 0;*/
 }
 
-footer .bar-wrap {
+footer .barContent {
 font-size: 12px;
 margin: 0 auto;
-max-width: 1150px;
+/*max-width: 1400px;*/
+width: 100%;
+box-sizing: border-box;
+max-width: 1250px;
+padding:10px 0 20px 20px;
 position: relative;
-width: 95%;
+
 }
 
 footer
@@ -153,7 +161,7 @@ color: #FFFFFF;
 footer
 .social {
 position: absolute;
-right: 10%;
+right: 8%;
 }
 
 /*footer a {
@@ -236,11 +244,11 @@ display:inline-block;
 float:none;
 }
 footer
-.bar {
+.barWrapper {
 position:relative;
 }
 footer
-.bar-wrap {
+.barContent {
 margin-bottom:0;
 }
 

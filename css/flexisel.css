@@ -19,6 +19,8 @@ display:none;
 .nbs-flexisel-container {
     position:relative;
     max-width:100%;
+    /* NOT IN ORIGINAL CODE */
+    height: 280px;
 }
 .nbs-flexisel-ul {
     position:relative;
