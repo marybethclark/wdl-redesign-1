@@ -9,6 +9,8 @@
 * http://www.opensource.org/licenses/mit-license.php
 */
 
+
+// GO TO http://slippry.com/settings/ FOR MORE CUSTOMIZEABLE OPTIONS
 (function ($) {
 
     $.fn.flexisel = function (options) {

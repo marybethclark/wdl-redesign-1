@@ -1,6 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
+
+
+
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.9, maximum-scale=3.0, user-scalable=yes">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -10,173 +14,142 @@
     <script language='JavaScript' type='text/javascript'>
         window.status = 'Loading...';
     </script>
-    <!-- <script type='text/javascript' src='/js/jquery-1.11.3.min.js?NS_VER=2016.2.0&minver=79'></script>
-    <script type='text/javascript' src='/uirefresh/script/jquery_isolation.js?NS_VER=2016.2.0&minver=79'></script>
-    <script type='text/javascript' src='/javascript/NLUtil.jsp?NS_VER=2016.2.0&minver=79&locale=en_US'></script>
-    <script type='text/javascript' src='/javascript/NLUtil.js?NS_VER=2016.2.0&minver=79'></script> -->
     <script language='JavaScript' type='text/javascript'>
         window.status = '';
     </script>
 
-    <!-- ****  BEGIN slippry IMAGE CAROUSEL  **** -->
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="/js/slippry.min.js"></script>
-    <link rel="stylesheet" href="/css/slippry.css" /> -->
-    <!-- ****  END slippry IMAGE CAROUSEL above **** -->
+    <!-- ****  SLIPPRY IMAGE CAROUSEL SLIDER **** -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/js/slippry.js"></script>
+    <link rel="stylesheet" href="css/slippry.css" />
 
-    <!-- ****  BEGIN redils IMAGE CAROUSEL  **** -->
-    <!-- <link rel="stylesheet" href="css/redils.css">
-    <script src="//code.jquery.com/jquery.min.js"></script>
-    <script src="js/redils.js"></script> -->
-    <!-- ****  END redils IMAGE CAROUSEL above **** -->
 
-    <!-- ****  FILES FOR FOUCS IMAGE CAROUSEL  **** -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/js/jquery.foucs.js" type="text/javascript"></script>
-    <link href="css/foucs2.css" rel="stylesheet">
-    <!-- ****  END foucs  **** -->
-
-    <!-- FILES FOR FLEXISEL CAROUSEL SLIDER -->
-    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+    <!--  FLEXISEL IMAGE CAROUSEL SLIDER -->
     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
     <link href="css/flexisel.css" rel="stylesheet" type="text/css" />
-    <!-- ****  END FLEXISEL  **** -->
-
-    <link rel='stylesheet' href='http://www.wdlsystems.com/core/styles/pagestyles.nl?ct=100&bglt=E6EDF5&bgmd=E6EDF5&bgdk=677789&bgon=013875&bgoff=52add9&bgbar=013875&tasktitletext=dedede&crumbtext=dedede&headertext=dedede&ontab=000000&offtab=ffffff&text=000000&link=000000&bgbody=FFFFFF&bghead=FFFFFF&portlet=3583b5&portletlabel=ffffff&bgbutton=FFE599&bgrequiredfld=FFFFE5&font=Arial%2CHelvetica%2Csans-serif&size_site_content=9pt&size_site_title=9pt&size=1.0&nlinputstyles=T&accessibility=F&NS_VER=2016.2.0'>
-    <!-- <link rel="stylesheet" href="https://checkout.netsuite.com/css/emjembedded.css">
-<link rel="stylesheet" href="https://checkout.netsuite.com/css/cart-styles.css"> -->
     <link rel="stylesheet" href="css/emjembedded.css">
-    <link rel="stylesheet" href="css/footer_redesign2.css">
+    <link rel="stylesheet" href="css/footer_redesign.css">
     <link rel="stylesheet" href="css/cart-styles.css">
+
+    <!-- IS THIS NECESSARY FOR NEW SITE?  -->
+    <link rel='stylesheet' href='http://www.wdlsystems.com/core/styles/pagestyles.nl?ct=100&bglt=E6EDF5&bgmd=E6EDF5&bgdk=677789&bgon=013875&bgoff=52add9&bgbar=013875&tasktitletext=dedede&crumbtext=dedede&headertext=dedede&ontab=000000&offtab=ffffff&text=000000&link=000000&bgbody=FFFFFF&bghead=FFFFFF&portlet=3583b5&portletlabel=ffffff&bgbutton=FFE599&bgrequiredfld=FFFFE5&font=Arial%2CHelvetica%2Csans-serif&size_site_content=9pt&size_site_title=9pt&size=1.0&nlinputstyles=T&accessibility=F&NS_VER=2016.2.0'>
+
 </head>
+
+
+
 
 <body link="black" vlink="black">
     <div id="container">
-        <!-- HEADER div -->
-        <div class="headerContainer">
-            <div class="upperHeaderWrapper">
-                <div class="upperHeaderContent">
-                    <div class="fontAwesomeHeaders" width="40">
-                        <ul class="centerIt">
+
+        <!-- HEADER -->
+        <div class="header_container">
+            <div class="header-upper_wrapper">
+                <div class="header-upper_content">
+
+                    <div class="header-upper_icons" width="40">
+                        <ul>
                             <li>
-                                <a href="http://www.wdlsystems.com/contact/contact.html">
-                                    <i class="fa fa-3x" aria-hidden="true" aria-label="contact" title="contact">1.800.548.2319</i>
-                                </a>
+                                <i class="fa" style="font-size:30px;" aria-hidden="true" aria-label="contact" title="contact">1.800.548.2319</i>
                             </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- DROPDOWN SEARCH BOX -->
+                    <div class="header-upper_icons" width="40">
+                        <ul>
+                            <li id="header-upper_visible-search-icon">
+                                <input id="toggle" type="checkbox"><label for="toggle"><i class="fa fa-search fa-3x"></i></label>
+                                <div id="header-upper_dropdown-search_wrapper">
+                                    <div id="slider">
+                                        <form class='sample-form' method="post" name="searchportlet" id="searchportlet" onsubmit="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;">
+                                            <div>
+                                                <input type="text" style="font-family:Arial, FontAwesome; color:black; font-size:16px;" id="search" name="search" value="">
+
+                                                <input id="searchButtonPositioning" type="submit" class="fa fa-search fa-2x" value="&#xf002;" name="search_submit" alt="search" onclick="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;return false;">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="header-upper_text">search</li>
                         </ul>
 
                     </div>
-                    <div class="fontAwesomeHeaders" width="40">
-                        <ul class="centerIt">
-                            <li>
-                                <i class="fa fa-search fa-3x" aria-hidden="true" aria-label="contact" title="contact"></i>
-                            </li>
-                            <li class="fontAwesomeHeaderText">SEARCH</li>
-                        </ul>
 
-                    </div>
-                    <div class="fontAwesomeHeaders" width="40">
-
-                        <ul class="centerIt">
+                    <div class="header-upper_icons" width="40">
+                        <ul>
                             <li>
-                                <a href="https://checkout.netsuite.com/app/center/nlvisitor.nl?c=3401285&sc=6&ck=ol43DwklAiCD622X&vid=jzXjFgklAiKD64j8&cktime=140600&promocode=&promocodeaction=overwrite">
+                                <a href="mailto:sales@wdlsystems.com">
                                     <i class="fa fa-envelope fa-3x" aria-hidden="true" aria-label="email" title="email"></i></a>
                             </li>
-                            <li class="fontAwesomeHeaderText">Email</li>
+                            <li class="header-upper_text">Email</li>
                         </ul>
 
                     </div>
-                    <div class="fontAwesomeHeaders" width="40">
-                        <ul class="centerIt">
+
+                    <div class="header-upper_icons" width="40">
+                        <ul>
                             <li>
                                 <a href="http://www.wdlsystems.com/">
                                     <i class="fa fa-home fa-3x" aria-hidden="true" aria-label="home page" title="home page"></i>
                                 </a>
                             </li>
-                            <li class="fontAwesomeHeaderText">Home</li>
+                            <li class="header-upper_text">Home</li>
                         </ul>
                     </div>
-                    <div class="fontAwesomeHeaders" width="40">
-                        <ul class="centerIt">
+
+                    <div class="header-upper_icons" width="40">
+                        <ul>
                             <li>
                                 <a href="/s.nl/sc.3/.f">
                                     <i class="fa fa-shopping-cart fa-3x" aria-hidden="true" aria-label="shopping cart" title="shopping cart"></i>
                                 </a>
                             </li>
-                            <li class="fontAwesomeHeaderText">Cart</li>
+                            <li class="header-upper_text">Cart</li>
                         </ul>
 
                     </div>
-                    <div class="fontAwesomeHeaders" width="40">
-                        <ul class="centerIt">
+                    <div class="header-upper_icons" width="40">
+                        <ul>
                             <li>
-                                <a href="https://checkout.netsuite.com/app/center/nlvisitor.nl?c=3401285&sc=6&ck=ol43DwklAiCD622X&vid=jzXjFgklAiKD64j8&cktime=140600&promocode=&promocodeaction=overwrite">
+                                <a href="https://checkout.netsuite.com/app/center/nlvisitor.nl/c.3401285/sc.6/.f">
                                     <i class="fa fa-user fa-3x " aria-hidden="true" aria-label="account" title="account"></i></a>
                             </li>
-                            <li class="fontAwesomeHeaderText">Account</li>
+                            <li class="header-upper_text">Account</li>
                         </ul>
-                        <!-- <a href="https://checkout.netsuite.com/app/center/nlvisitor.nl?c=3401285&sc=6&ck=ol43DwklAiCD622X&vid=jzXjFgklAiKD64j8&cktime=140600&promocode=&promocodeaction=overwrite">
-                            <i  class="fa fa-user fa-3x" aria-hidden="true" aria-label="account" title="account"></i><span>Account</span>
-                        </a> -->
                     </div>
-
-
-
-                    <!-- <div class="searchBoxContainer">
-                        <form method="post" name="searchportlet" id="searchportlet" onsubmit="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;">
-                            <div>
-                                <input type="text" placeholder="      Search" style="font-family:Arial, FontAwesome; color:black;" id="search" name="search" maxlength="50" value="">
-
-                                <input id="searchButtonPositioning" name="search_submit" type="image" src="/images/buttons/search_icon_white.gif" alt="search" onclick="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;return false;">
-
-                            </div>
-                        </form>
-                    </div> -->
-
-
-
                 </div>
-            </div>
-
-
-            <div class="searchDropdownContainer">
-
-
-
-                <form class='sample-form' method="post" name="searchportlet" id="searchportlet" onsubmit="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;">
-                    <div>
-                        <input type="text" placeholder="      Search" style="font-family:Arial, FontAwesome; color:black;" id="search" name="search" maxlength="50" value="">
-
-                        <input id="searchButtonPositioning" type="submit" class="fa fa-search fa-3x" value="&#xf002;" name="search_submit" alt="search" onclick="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;return false;">
-
-                    </div>
-                </form>
-
             </div>
 
 
 
             <!-- WDL v2.0 TEST: Start Logo and Tabs -->
 
-            <div class="lowerHeaderWrapper">
-                <div class="lowerHeaderContent">
+            <div class="header-lower_wrapper">
+                <div class="header-lower_content">
+
                     <a href="/wdlsystems">
-                        <IMG src="/images/headers/wdl_logo.gif" class="wdlLogo" border=0 alt="WDL systems" width="178" align=top>
+                        <IMG src="/images/headers/wdl_logo.gif" class="wdl-logo" border=0 alt="WDL systems" width="178" align=top>
                     </a>
 
+                    <div>
+                        <nav id="header-lower_menu-wrapper" class="header-lower_menu">
 
-                    <!--  ******  CAME FROM  LINES 145 - 205  ****** -->
-                    <div class="menu-wrap">
-                        <nav id="primary_nav_wrap" class="menu">
                             <!--  ENCLOSES DROPDOWN MENU ITEMS  -->
                             <ul class="clearfix">
+
                                 <!-- ALWAYS VISIBLE LEVEL -->
-                                <li> <a href="#">PRODUCTS <span class="arrow">&#9660;</span></a>
+                                <li> <a href="#">PRODUCTS <span class="header-lower_menu-arrow">&#9660;</span></a>
+
                                     <!-- FIRST LEVEL DROPPED DOWN-->
-                                    <ul class="sub-menu">
+                                    <ul class="header-lower_sub-menu">
                                         <li><a href="#">Embedded Computing</a>
+
                                             <!-- SECOND LEVEL DROPPED DOWN-->
-                                            <ul class="sub-menu">
+                                            <ul class="header-lower_sub-menu">
                                                 <li><a href="#">Computer On Module</a></li>
                                                 <li><a href="#">FPGA</a></li>
                                                 <li><a href="#">GPU</a></li>
@@ -190,8 +163,9 @@
 
                                         <!-- FIRST LEVEL DROPPED DOWN-->
                                         <li><a href="#">Industrial IoT</a>
+
                                             <!-- SECOND LEVEL DROPPED DOWN-->
-                                            <ul class="sub-menu">
+                                            <ul class="header-lower_sub-menu">
                                                 <li><a href="#">Box PC</a></li>
                                                 <li><a href="#">Communication</a></li>
                                                 <li><a href="#">Digital Signage/Panel PCs</a></li>
@@ -200,10 +174,12 @@
                                                 <li><a href="#">Servers</a></li>
                                             </ul>
                                         </li>
+
                                         <!-- SECOND LEVEL STUFF GOES BELOW -->
-                                        <li><a href="/Communications/">Systems & Solutions</a>
+                                        <li><a href="/Communications/">Systems &amp; Solutions</a>
+
                                             <!-- SECOND LEVEL DROPPED DOWN-->
-                                            <ul class="sub-menu">
+                                            <ul class="header-lower_sub-menu">
                                                 <li><a href="#">Blade Computing</a></li>
                                                 <li><a href="#">Box PC</a></li>
                                                 <li><a href="#">Displays</a></li>
@@ -215,14 +191,17 @@
                                                 <li><a href="#">Tablets &amp; Handhelds</a></li>
                                             </ul>
                                         </li>
+
                                         <!-- SECOND LEVEL STUFF GOES BELOW -->
                                         <li><a href="#">Makers</a></li>
                                     </ul>
                                 </li>
+
                                 <!-- ALWAYS VISIBLE LEVEL -->
-                                <li><a href="#">MARKETS <span class="arrow">&#9660;</span></a>
+                          <li><a href="#">MARKETS <span class="header-lower_menu-arrow">&#9660;</span></a>
+
                                     <!-- FIRST LEVEL DROPPED DOWN-->
-                                    <ul class="sub-menu">
+                                    <ul class="header-lower_sub-menu">
                                         <li><a href="#">Communications</a></li>
                                         <li><a href="#">Measurement &amp; Automation</a></li>
                                         <li><a href="#">PC/104 Peripherals</a></li>
@@ -230,30 +209,42 @@
                                         <li><a href="#">Single Board Computers</a></li>
                                     </ul>
                                 </li>
+
                                 <!-- ALWAYS VISIBLE LEVEL -->
                                 <li><a href="http://www.wdlsystems.com/vendors/vendors.html">MANUFACTURERS </a></li>
+
                                 <!-- ALWAYS VISIBLE LEVEL -->
-                                <li><a href="#">COMPANY <span class="arrow">&#9660;</span></a>
+                                <li><a href="#">COMPANY <span class="header-lower_menu-arrow">&#9660;</span></a>
+
                                     <!-- FIRST LEVEL DROPPED DOWN-->
-                                    <ul class="sub-menu">
+                                    <ul class="header-lower_sub-menu">
+
                                         <li><a href="http://www.wdlsystems.com/about/profile.html">About</a>
                                         </li>
+
                                         <li><a href="http://www.wdlsystems.com/contact/contact.html">Contact</a></li>
+
                                         <li><a href="http://www.wdlsystems.com/help/help.html">Support</a></li>
+
+                                        <li><a href="http://www.wdlsystems.com/news/tradeshows.html">Events</a></li>
+
+                                        <li><a href="http://www.wdlsystems.com/news/press.html">Product Announcements</a></li>
+
+                                        <li><a href="http://www.wdlsystems.com/help/help.html">White Papers</a></li>
+
+                                        <li><a href="http://www.wdlsystems.com/help/help.html">Tech News</a></li>
+
+                                        <li><a href="http://www.wdlsystems.com/help/help.html">Community News</a></li>
+
                                     </ul>
                                 </li>
-
                             </ul>
                         </nav>
                     </div>
-                    <!--  ************ -->
-
                 </div>
-
-
                 <!-- BELOW CLOSES  lowerHeaderWrapper-->
             </div>
-            <!-- BELOW CLOSES headerContainer -->
+            <!-- BELOW CLOSES header_container -->
         </div>
         <!-- WDL v2.0 TEST: End Logo and Tabs -->
 
@@ -261,190 +252,105 @@
 
         <!-- begin content area -->
 
+
         <!-- ****  BEGIN slippry IMAGE CAROUSEL  **** -->
-        <!-- <ul id="slippry-demo">
-  <li>
-    <a href="#slide1"><img src="images/slippry_1.jpg" alt="Welcome to Slippry!"></a>
-  </li>
-  <li>
-    <a href="#slide2"><img src="images/slippry_2.jpg"  alt="This is an awesome jQuery slider plugin."></a>
-  </li>
-  <li>
-    <a href="#slide3"><img src="images/slippry_3.jpg" alt="Check it out, you are going to <span class='red'>♥</span> it :)"></a>
-  </li>
-</ul> -->
+
+        <!-- js-slippry id is needed for javascript -->
+        <ul id="js-slippry">
+
+            <li title="This is caption 1 <a href='#link'>Even with links!</a>">
+                <a href="#slide1"><img src="images/slippry_1.jpg" alt="demo1_1"></a>
+            </li>
+
+            <li title="This is caption 2">
+                <a href="#slide2"><img src="images/slippry_2.jpg" alt="demo1_2"></a>
+            </li>
+
+        </ul>
         <!-- ****  END slippry IMAGE CAROUSEL  **** -->
 
-        <!-- ****  BEGIN redils IMAGE CAROUSEL  **** -->
-        <!-- <div class="redils-cont redils-default">
-            <div class="redils">
-                <div class="slide-cont">
-                    <div id="first-slide" class="slides">
-                        <img id="first-image-in-slide" src="images/240614085618-placeholder-1170x660-dddddd.jpg">
-                    </div>
-                    <div class="slides">
-                        <img src="images/240614085630-placeholder-1170x660-b5b5b5.jpg" alt="b5b5b5">
-                    </div>
-                    <div class="slides">
-                        <img src="images/240614085638-placeholder-1170x660-838383.jpg">
-                    </div>
-                    <div class="slides">
-                        <img src="images/240614085645-placeholder-1170x660-5c5c5c.jpg">
-                    </div>
-                    <div class="slides">
-                        <img src="images/240614085654-placeholder-1170x660-ededed.jpg">
-                    </div>
-                </div>
-            </div>
-            <div class="redils-controls">
-                <div class="arrow-area arrow-area-left">
-                    <div class="arrow"></div>
-                </div>
-                <div class="arrow-area arrow-area-right">
-                    <div class="arrow"></div>
-                </div>
-            </div>
-            <div class="pagination"></div>
-        </div> -->
-        <!-- ****  END redils IMAGE CAROUSEL ABOVE  **** -->
-        <div>
-            <img class="heroImage" src="images/homepage_slider_large/hero_sample.jpg" />
-        </div>
-        <div class="mainContentWrapper">
 
 
 
-            <!-- ****  BEGIN foucs IMAGE CAROUSEL  **** -->
-            <!-- <div class="mainFoucs">
-                <div id="index_b_hero">
-                    <div class="hero-wrap">
-                        <ul class="heros clearfix">
-                            <li class="hero">
-                                <img src="images/homepage_slider_large/WDL-950x400-adlink-vision.jpg" alt="" usemap="#1" />
-                                <map name="1" id="Map">
- <area alt="" title="" href=" http://www.wdlsystems.com/Machine-Vision/ADLINK_11/" shape="rect" coords="74,337,391,375" />
- <area alt="" title="" href="http://www.wdlsystems.com/Machine-Vision/ADLINK_6/" shape="rect" coords="447,339,643,374" />
- <area alt="" title="" href=" http://www.wdlsystems.com/Machine-Vision/Compact-Vision-Systems/" shape="rect" coords="673,340,915,373" />
- [...]
-</map>
-                            </li>
-                            <li class="hero">
-                                <img src="images/homepage_slider_large/WDL-950x400-adlink-vpx6000.jpg" alt="" usemap="#2" />
-                                <map name="2" id="Map">
-       <area alt="" title="" href="http://www.wdlsystems.com/Blade-Computing/?search=vpx60" shape="rect" coords="7,6,945,393" />
-       [...]
-   </map>
-                            </li>
-                            <li class="hero">
-                                <img src="images/homepage_slider_large/WDL-950x400-adlink-vision.jpg" alt="" usemap="#3" />
-                                <map name="3" id="Map">
- <area alt="" title="" href=" http://www.wdlsystems.com/Machine-Vision/ADLINK_11/" shape="rect" coords="74,337,391,375" />
- <area alt="" title="" href="http://www.wdlsystems.com/Machine-Vision/ADLINK_6/" shape="rect" coords="447,339,643,374" />
- <area alt="" title="" href=" http://www.wdlsystems.com/Machine-Vision/Compact-Vision-Systems/" shape="rect" coords="673,340,915,373" />
- [...]
-</map>
-                            </li>
-                            </li>
-                            <li class="hero">
-                                <img src="images/homepage_slider_large/WDL-950x400-adlink-vpx6000.jpg" alt="" usemap="#2" />
-                                <map name="2" id="Map">
-      <area alt="" title="" href="http://www.wdlsystems.com/Blade-Computing/?search=vpx60" shape="rect" coords="7,6,945,393" />
-      [...]
-  </map>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="helper">
-                        <div class="mask-left"> </div>
-                        <div class="mask-right"> </div>
-                        <a href="#" class="prev icon-arrow-a-left"></a>
-                        <a href="#" class="next icon-arrow-a-right"></a>
-                    </div>
-                </div>
-            </div> -->
-            <!-- ****  END foucs IMAGE CAROUSEL  **** -->
+
+        <div class="main-content_wrapper">
 
 
             <!-- ****  BEGIN FLEXISEL IMAGE CAROUSEL **** -->
-            <div class="nbs-flexisel-container">
-                <div class="nbs-flexisel-inner">
+            <div class="flexisel_container">
+                <div class="flexisel_inner">
+                    <!-- CLEARING FLOATS DOESN'T SEEM TO BE NEEDED -->
+                    <div class="clearout"></div>
+                    <!-- flexisel2 id needed for JavaScript -->
+                    <ul id="flexisel2" class="flexisel_ul" style="left: -256px; display: block;">
 
-                    <!-- <div class="clearout"></div> -->
-                    <ul id="flexisel2" class="nbs-flexisel-ul" style="left: -256px; display: block;">
-                        <li class="nbs-flexisel-item"><img src="images/homepage_slider_small/small_slider_1.jpg"></li>
-                        <li class="nbs-flexisel-item"><img src="images/homepage_slider_small/small_slider_2.jpg"></li>
-                        <li class="nbs-flexisel-item"><img src="images/homepage_slider_small/small_slider_3.jpg"></li>
-                        <li class="nbs-flexisel-item"><img src="images/homepage_slider_small/small_slider_4.jpg"></li>
-                        <li class="nbs-flexisel-item"><img src="images/homepage_slider_small/small_slider_1.jpg"></li>
-                        <li class="nbs-flexisel-item"><img src="images/homepage_slider_small/small_slider_2.jpg"></li>
-                        <li class="nbs-flexisel-item"><img src="images/homepage_slider_small/small_slider_3.jpg"></li>
-                        <li class="nbs-flexisel-item"><img src="images/homepage_slider_small/small_slider_4.jpg"></li>
+                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_1.jpg"></li>
+
+                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_2.jpg"></li>
+
+                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_3.jpg"></li>
+
+                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_4.jpg"></li>
+
+                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_5.jpg"><span class="flexisel_image-text"><p>
+                     Manage processing challenges in the Cloud Era using Media Cloud Server.</p></span></li>
+
+                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_6.jpg"><span class="flexisel_image-text"><p>
+                       ADLINK SEMA Cloud and Mini-ITX boards to optimize vending machine business</p></span></li>
+
+                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_7.jpg"><span class="flexisel_image-text"><p>
+                       Extensive VPX Products Portfolio-Processor Blades, GPU Blades &amp; XMC Modules</p></span></li>
+
+                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_8.jpg"></li>
                     </ul>
-                    <!-- REMOVING THESE ELIMINATES THE DUPLICATE ARROWS -->
+                    <!-- REMOVING THIS code ELIMINATES THE DUPLICATE header-lower_menu ARROWS -->
                     <!-- <div class="nbs-flexisel-nav-left" style="top: 21.5px;"></div>
-                <div class="nbs-flexisel-nav-right" style="top: 21.5px;"></div> -->
+                   <div class="nbs-flexisel-nav-right" style="top: 21.5px;"></div> -->
                 </div>
-                <!-- CLOSE FLEXISEL CONTAINER -->
+                <!-- CLOSE FLEXISEL CONTAINER BELOW-->
             </div>
-            <div class="homepageContentContainer">
-                <div class="blogNewsWrapper">
-                    <div class="blogNewsContentContainer">
-                        <div class="blogNewsContentLeft">
-                            <h2><a class="homepageContentHeading whiteLink" href="http://www.wdlsystems.com/news/press/2016/3SR-P-InnoDisk.html">LATEST BLOG POST</a></h2>
+
+
+
+
+
+            <!-- <div class="blog-twitter_container"> -->
+                <div class="blog-twitter_wrapper">
+                    <div class="blog-twitter_container">
+                        <div class="blog-twitter_content-left">
+
+                            <h2><a class="blog-twitter_colored-block whiteLink" href="#">LATEST BLOG POST</a></h2>
+
                             <h2 class="homepageContentTitle">I have to push the pram a lot.</h2>
-                            <div class='homepageContentText'><input id="toggle" type="checkbox"><label for="toggle">toggle slider</label>
-<div id="wrap">
-    <div id="slider">
-        <p>Blah blah blah blah blah....</p>
-    </div>
-</div>
+
+                            <div class='homepageContentText'>
                                 <p>The swallow may fly south with the sun, and the house martin or the plover may seek warmer climes in winter, yet these are not strangers to our land. The nose? And the hat. She's a witch! Listen. Strange women lying in
                                     ponds distributing swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.</p>
                                 <p>Did you dress her up like this? Listen. Strange women lying in ponds distributing swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic
                                     ceremony.
                                 </p>
-                                ...<b><a style="color:red; font-weight:bold; font-size:16px;" href="http://www.wdlsystems.com/news/press/2016/3SR-P-InnoDisk.html">MORE</a></b></div>
+                                ...<b><a style="color:red; font-weight:bold; font-size:16px;" href="#">MORE</a></b></div>
                         </div>
+
                     </div>
-                    <div class="blogNewsContentContainer">
-                        <div class="blogNewsContentRight">
-                            <h2><a class="homepageContentHeading whiteLink" href="http://www.wdlsystems.com/news/press/2016/3SR-P-InnoDisk.html">TWITTER</a></h2>
+                    <div class="blog-twitter_container">
+                        <div class="blog-twitter_content-right">
+
+                            <h2><a class="blog-twitter_colored-block whiteLink" href="http://www.wdlsystems.com/news/press/2016/3SR-P-InnoDisk.html">TWITTER</a></h2>
+
                             <a class="twitter-timeline" data-width="578" data-height="384" href="https://twitter.com/wdlsystems">Tweets by wdlsystems</a>
+
                             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
                     </div>
 
                 </div>
 
-                <!--  CLOSES blogNewsWrapper -->
+                <!--  CLOSES blog-twitter_Wrapper -->
             </div>
-            <!-- <ul> -->
-
-            <!-- <div class="blogNewsWrapper">
-                        <div class="blogContentContainer">
-
-
-                            <li class="homepageContentColumn">
-                                <div>
-                                    <h2><a class="homepageContentHeading whiteLink" href="http://www.wdlsystems.com/news/press/2016/3SR-P-InnoDisk.html">LATEST BLOG POST</a></h2>
-                                    <h2 class="homepageContentTitle">Donnie's Insightful Blog</h2>
-                                    <div class='homepageContentText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at ipsum nec neque dictum placerat ac nec mi. Nunc enim quam, pellentesque non turpis ac, pellentesque volutpat libero...<b><a style="color:red; font-weight:bold; font-size:16px;" href="http://www.wdlsystems.com/news/press/2016/3SR-P-InnoDisk.html">MORE</a></b></div>
-                                </div>
-                            </li>
-                        </div>
-                        <div class="blogContentContainer">
-                            <li class="homepageContentColumn">
-                                <div>
-                                    <h2><a class="homepageContentHeading whiteLink" href="http://www.wdlsystems.com/news/press/2016/3SR-P-InnoDisk.html">NEWS</a></h2>
-                                    <h2 class="homepageContentTitle">WDL Systems Proudly Distributes Innodisk's 2.5” SATA SSD 3SR-P with InnoRobust Features</h2>
-                                    <div class='homepageContentText'>WDL Systems proudly distributes Innodisk's rugged 2.5” SATA SSD 3SR-P Series, a SATA III 6.0Gb/s Flash based disk delivering excellent performance and reliability. The 2.5” SATA SSD 3SR-P features...<b> <a style="color:red; font-weight:bold; font-size:16px;" href="http://www.wdlsystems.com/news/press/2016/3SR-P-InnoDisk.html">MORE</a></b></div>
-                                </div>
-                            </li>
-                        </div>
-                    </div> -->
-            <!-- </ul> -->
         </div>
 
+        <!-- DO WE NEED THIS HIT TRACKER SCRIPT ON NEW SITE? -->
         <script>
             var i = new Image();
             i.src = '/app/site/hit/tracker.nl?c=3401285&n=1&type=page&siteroot=Live+Hosting+Files&url=%2Findex.html&referer=' + escape(document.referrer);
@@ -456,33 +362,44 @@
                 return;
             };
         </script>
+
         <!--BELOW CLOSES  mainContentWrapper-->
     </div>
+
+
+
 
     <!-- WDL v2.0 TEST: Start Footer -->
 
     <footer>
         <ul>
+
             <!-- three footer columns are here -->
-            <!-- <ul> -->
             <li>
-                <div class="footerColumnText">
+                <div class="footer_text">
+
                     <h4>CONTACT</h4>
+
                     <div>
+
                         <div><span>WDL Systems</span></div>
                         <div><span>220 Chatham Business Drive</span></div>
                         <div><span>Pittsboro, North Carolina 27312</span></div>
                         <div><span>USA</span></div>
                         <div><span>1.800.548.2319</span></div>
+
                         <div><span>Sales: <a href="mailto:sales@wdlsystems.com">sales@wdlsystems.com</a></span></div>
+
                         <div><span>Support: <a href="mailto:support@wdlsystems.com">support@wdlsystems.com</a></span></div>
-                        <!-- <div><a href="#">Read more</a></div> -->
+
                     </div>
                 </div>
             </li>
             <li>
-                <div class="footerColumnText">
+                <div class="footer_text">
+
                     <h4>LINKS</h4>
+
                     <div>
                         <div><span><a href="#">Promotions</a></span>
                         </div>
@@ -497,45 +414,111 @@
                         <div><a href="#">Contact Us</a></span>
                         </div>
                     </div>
+
                 </div>
             </li>
-            <li>
-                <div class="footerColumnText">
-                    <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
-                    <div>Get Product News & Info from</div>
-                    <div>The Embedded Products Source.</div>
-                    <div class="newsletterSubscribeContainer">
-                        <form method="post" name="searchportlet" id="searchportlet" onsubmit="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;">
-                            <div>
-                                <input type="footerColumnText" placeholder="Enter your email." style="font-family:Arial, FontAwesome; color:black; height:30px" id="search" name="search" maxlength="50" value="">
 
-                                <input id="newsletterButtonPositioning" name="search_submit" type="image" src="images/buttons/submit_button.jpg" alt="search" onclick="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;return false;">
+            <li>
+                <div class="footer_text">
+
+                    <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+
+                    <div>Get Product News &amp; Info from</div>
+                    <div>The Embedded Products Source.</div>
+
+                    <div class="footer_newsletter-subscribe_container">
+                        <form novalidate name="previewForm" method="post" action="https://secure.campaigner.com/CSB/Public/ProcessHostedForm.aspx" id="previewForm" enctype="multipart/form-data" target="_blank">
+
+
+                            <script type="text/javascript">
+                                //<![cdata[
+                                var theForm = document.forms['previewForm'];
+                                if (!theForm) {
+                                    theForm = document.previewForm;
+                                }
+
+                                function __doPostBack(eventTarget, eventArgument) {
+                                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                                        theForm.__EVENTTARGET.value = eventTarget;
+                                        theForm.__EVENTARGUMENT.value = eventArgument;
+                                        theForm.submit();
+                                    }
+                                }
+                                //]]>
+                            </script>
+
+                            <div>
+
+                                <input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5523BD75" type="hidden">
                             </div>
+                            <div id="previewWrapper" style="text-align:center">
+
+                                <div id="LanguageDropdown" class="LanguageDropdown">
+                                 </div>
+
+                                <div id="formContainer" class="formContainer">
+                                    <div id="SignupFormPreview" class="SignupFormPreview">
+                                        <table id="FormFieldsTable" cellpadding="0" cellspacing="0">
+                                            <tr id="Email4308438" align="left">
+                                                <td>
+
+                                                </td>
+                                                </td>
+                                                <td></td>
+                                                <td><input class="input-box" placeholder="     Enter your email." name="4308438" maxlength="4000" id="4308438" class="required email" contactattributeid="4308438" style="width:200px;" type="text"></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+
+
+                                    <div id="FooterPreview" class="SignupFormPreview"></div>
+
+                                    <div id="btnSection">
+                                        <!-- <span id="Label1"></span> -->
+                                        <div class="submit-button_wrapper">
+                                            <input name="SubmitButton" value="Submit" id="SubmitButton" class="btnStyle" type="submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input name="FormInfo" id="FormInfo" value="0a896380-bf79-4bbb-a52b-92fe595b5b25" type="hidden">
+
                         </form>
+
                     </div>
                 </div>
             </li>
-            <!-- </ul> -->
         </ul>
-        <div class="barWrapper">
-            <div class="barContent">
-                <ul class="links">
-                    <li class="links"><a href="#">Home</a></li>
-                    <li class="links"><a href="#">About Us</a></li>
-                    <li class="links"><a href="#">Sitemap</a></li>
+        <div class="footer_bar-wrapper">
+            <div class="footer_bar-content">
+
+                <ul class="footer_links">
+
+                    <li class="footer_links"><a href="#">Home</a></li>
+                    <li class="footer_links"><a href="#">About Us</a></li>
+                    <li class="footer_links"><a href="#">Sitemap</a></li>
+
                 </ul>
-                <div class="social">
-                    <!-- <a href="#">
-    <span data-icon="f" class="icon"></span>
-    </a> -->
-                    <a href="#">
-                        <i class="icon fa fa-facebook fa-3x" aria-hidden="true" aria-label="Facebook" title="Facebook"></i>
+
+                <div class="footer_social-media_container">
+
+                    <a href="https://www.facebook.com/wdlsystems/?ref=ts" target="_blank">
+                        <i class="footer_social-media_icon fa fa-facebook fa-3x" aria-hidden="true" aria-label="Facebook" title="Facebook"></i>
                     </a>
-                    <a href="#">
-                        <i class="icon fa fa-twitter fa-3x" aria-hidden="true" aria-label="Twitter" title="Twitter"></i>
+
+                    <a href="https://twitter.com/wdlsystems" target="_blank">
+                        <i class="footer_social-media_icon fa fa-twitter fa-3x" aria-hidden="true" aria-label="Twitter" title="Twitter"></i>
                     </a>
+
                 </div>
+
                 <div class="clear"></div>
+
                 <div class="copyright">&copy; 2017 WDL Systems, LLC.</div>
             </div>
         </div>
@@ -544,52 +527,82 @@
     </div>
 
 
-    <!-- ****  BEGIN redils IMAGE CAROUSEL  **** -->
-    <!-- <script type="text/javascript">
-        $('.redils-default .redils').redils();
-    </script> -->
-    <!-- ****  END redils IMAGE CAROUSEL ABOVE  **** -->
 
-    <!-- FOUCS CAROUSEL SLIDER -->
-    <script type="text/javascript">
-        $.foucs({
-            interval: 15000, // Auto slide interval in millisecondss
-            animateTime: 1500, // <a href="http://www.jqueryscript.net/animation/">Animation</a> time in ms
-            direction: 'right' // Slide direction
-        });
-    </script>
 
     <!-- SLIPRY CAROUSEL SLIDER -->
-    <!-- <script type="text/javascript">
-    jQuery(document).ready(function(){
-  jQuery('selector').slippry()
-});
-</script> -->
+
+    <script type="text/javascript">
+        jQuery('#js-slippry').slippry({
+            // general elements & wrapper
+            slippryWrapper: '<div class="sy-box portfolio-slider" />', // wrapper to wrap everything, including pager
+
+            // options
+            adaptiveHeight: false, // height of the sliders adapts to current slide
+            start: 1, // num (starting from 1), random
+            loop: true, // first -> last & last -> first header-lower_menu-arrows
+            captionsSrc: 'li',
+            captions: 'overlay', // Position: overlay, below, custom, false
+            captionsEl: '.external-captions',
+
+            // transitions
+            transition: 'horizontal', // fade, horizontal, kenburns, false
+            easing: 'linear', // easing to use in the animation [(see... [jquery www])]
+            continuous: true,
+
+            // slideshow
+            auto: false
+        });
+    </script>
 
     <!-- FLEXISEL CAROUSEL SLIDER -->
     <script type="text/javascript">
         $(window).load(function() {
 
             $("#flexisel2").flexisel({
+                // The initial number of visible items in the carousel
                 visibleItems: 4,
-                itemsToScroll: 4,
-                animationSpeed: 3000,
+
+                // Sets the initial number of items that you want to scroll
+                itemsToScroll: 1,
+
+                // Speed of the scrolling animation
+                animationSpeed: 1000,
+
+                // Sets whether or not the carousel wraps infinitely
+                infinite: true,
+
+                // Auto scrolling
                 autoPlay: {
                     enable: false,
                     interval: 5000,
                     pauseOnHover: false
-                }
+                },
+
+                // Custom breakpoints for responsive design
+                responsiveBreakpoints: {
+                    portrait: {
+                        changePoint: 480,
+                        visibleItems: 1,
+                        itemsToScroll: 1
+                    },
+                    landscape: {
+                        changePoint: 640,
+                        visibleItems: 2,
+                        itemsToScroll: 2
+                    },
+                    tablet: {
+                        changePoint: 768,
+                        visibleItems: 3,
+                        itemsToScroll: 3
+                    }
+                },
+                // callbacks
+                loaded: function() {},
+                before: function() {},
+                after: function() {}
             });
-
-
-
         });
     </script>
 </body>
 
 </html>
-
-<!-- 77 s: 26% #22 cache: 14% #90 -->
-<!-- [ sh.j25.sv ] [ 2016.2.0.79 ]-->
-<!-- [ 3401285 ] [ /s.nl ] [ Tue Dec 13 08:33:55 PST 2016 ] -->
-<!-- Not logging slowest SQL -->

@@ -1,20 +1,66 @@
-#searchButtonPositioning {
-    /*position: relative;
-    top: 5.5px;
-    left: -5px;*/
+/* -- TABLE OF CONTENTS ------------------
+
+1. UNIVERSAL STYLES (TYPOGRAPHY, ETC.)
+2. STRUCTURE
+3. HEADER
+4. LARGER SLIDER
+5. SMALLER SLIDER
+6. LEFT NAV
+7. HOMEPAGE CONTENT
+8. RESERVED FOR FUTURE PAGES
+9. RESERVED FOR FUTURE PAGES
+10. TABLE ELEMENTS
+11. FOOTER
+12. MEDIA QUERIES (RESPONSIVENESS)
+------------------------------------------ */
+
+
+/* -------------------------------------------
+[Color Codes]
+
+left nav (old site)
+#0066cc
+
+wdl-logo color for new site
+#175aa7
+
+homepage content background
+#cccccc
+
+links:hover
+#aaaaaa
+
+footer background
+#2E3639
+
+footer bottom
+ #1E2629
+
+ footer text
+ #848889
+
+ footer links on hover
+ #FFFFFF
+ ------------------------------------------ */
+
+
+#searchButtonPositioning{
     height: 30px;
-    width:30px;
+    width:48px;
+    position: relative;
+    right: 5px;
+    top: 2px;
+    text-align: center;
     background-color: green;
-    border-width: 3px 3px 3px 6px;
+    /*border-width: 3px 3px 3px 6px;*/
     border-color: green;
     border-radius: 0 3px 3px 0;
-}
+   }
 
-#searchButtonPositioning:hover {
+#searchButtonPositioning:hover{
     background-color: #007300;
     border-color: #007300;
     cursor:pointer;
-    /*border-left: 6px solid #007300;*/
 }
 
 
@@ -42,378 +88,307 @@
         /*overflow: auto;
         padding-bottom: 50px;*/
     }
-    .wdlLogo {
+    .wdl-logo {
         padding-left: 30px;
         padding-top: 15px;
         padding-bottom: 5px;
         margin-right: 120px;
         /*border: 1px solid red;*/
     }
-    .headerContainer {
+    .header_container {
         width: 100%;
         margin: 0 auto;
+      }
+      .header-upper_wrapper {
+          background-color: #175aa7;
+
+          /*  GRADIENT */
+          background: rgba(43, 159, 237, 1);
+          background: -moz-linear-gradient(top, rgba(43, 159, 237, 1) 0%, rgba(23, 90, 167, 1) 72%, rgba(23, 90, 167, 1) 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(43, 159, 237, 1)), color-stop(72%, rgba(23, 90, 167, 1)), color-stop(100%, rgba(23, 90, 167, 1)));
+          background: -webkit-linear-gradient(top, rgba(43, 159, 237, 1) 0%, rgba(23, 90, 167, 1) 72%, rgba(23, 90, 167, 1) 100%);
+          background: -o-linear-gradient(top, rgba(43, 159, 237, 1) 0%, rgba(23, 90, 167, 1) 72%, rgba(23, 90, 167, 1) 100%);
+
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b9fed', endColorstr='#175aa7', GradientType=0);
     }
-    .upperHeaderWrapper {
-        background-color: #175aa7;
-        /*background-color: #175aa7;*/
-        /*background-color:rgba(23, 90, 167, 0.87 );*/
-        /*background-color:rgba(23, 90, 167, 0.76 );*/
-        /*background-color:rgba(0, 87, 153, 0.6  );*/
-        /*background-color:rgba(23, 90, 167, 0.45  );*/
-        /*background-color: #14768b;*/
-        /*background-color: #009980;*/
-        /*background-color:rgba(14, 140, 127, 0.45  );*/
-        /*background-color: rgba(98, 48, 70, 0.88);*/
-        /*  BLUE GRADIENT */
-        background: rgba(43, 159, 237, 1);
-        background: -moz-linear-gradient(top, rgba(43, 159, 237, 1) 0%, rgba(23, 90, 167, 1) 72%, rgba(23, 90, 167, 1) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(43, 159, 237, 1)), color-stop(72%, rgba(23, 90, 167, 1)), color-stop(100%, rgba(23, 90, 167, 1)));
-        background: -webkit-linear-gradient(top, rgba(43, 159, 237, 1) 0%, rgba(23, 90, 167, 1) 72%, rgba(23, 90, 167, 1) 100%);
-        background: -o-linear-gradient(top, rgba(43, 159, 237, 1) 0%, rgba(23, 90, 167, 1) 72%, rgba(23, 90, 167, 1) 100%);
-        background: -ms-linear-gradient(top, rgba(43, 159, 237, 1) 0%, rgba(23, 90, 167, 1) 72%, rgba(23, 90, 167, 1) 100%);
-        background: linear-gradient(to bottom, rgba(43, 159, 237, 1) 0%, rgba(23, 90, 167, 1) 72%, rgba(23, 90, 167, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b9fed', endColorstr='#175aa7', GradientType=0);
-        /*padding-right: 20px;*/
-    }
-    .upperHeaderContent {
-        /*max-width: 1400px;*/
-        /*display: block;*/
-        max-width: 1250px;
-        height: 50px;
+
+      .header-upper_content {
+        max-width: 1600px;
+        height: 59px;
         margin: 0 auto;
         padding-bottom: 5px;
-        padding-top: 4px;
-    }
-    .fontAwesomeHeaders {
-        padding-right: 15px;
-        margin-top: 10px;
-        float: right;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        font-weight: 100;
-        letter-spacing: 1.7px;
-        /*border: 1px solid red;*/
-    }
-    .fa-3x {
-        color: #dddddd;
-        font-size: 2.5em;
-    }
-    .fa-3x:hover {
-        color: #aaaaaa;
-    }
-    .fontAwesomeHeaderText {
-        padding-top: 2px;
-    }
+      }
 
-    /*  BEGIN DROPDOWN NAVBAR */
-    /* SOURCE CREDIT:  Code for dropdown navbar modified from Phil Hoyt's https://codepen.io/philhoyt/pen/ujHzd and Seb Kay's http://inspirationalpixels.com/tutorials/creating-a-dropdown-menu-with-html-css */
+        .header-upper_icons {
+          padding-right: 15px;
+          margin-top: 10px;
+          float: right;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: "Helvetica Neue", Arial, sans-serif;
+          letter-spacing: 1.7px;
+        }
 
-  #primary_nav_wrap
-  {
-  	margin-top:15px
-  }
+      /* FONT AWESOME (fa) ICON STYLING */
+          .fa-3x {
+            color: #dddddd;
+            font-size: 2.5em;
+          }
 
-  #primary_nav_wrap ul
-  {
-  	list-style:none;
-  	position:relative;
-  	float:left;
-  	margin:0;
-  	padding:0
-  }
+          .fa-3x:hover {
+            color: #aaaaaa;
+          }
 
-  #primary_nav_wrap ul li
-  {
-  	position:relative;
-  	float:left;
-  	margin:0;
-  	padding:0
-  }
+        .header-upper_text {
+          padding-top: 2px;
+        }
 
-  #primary_nav_wrap ul li.current-menu-item
-  {
-  	background:#ddd;
-  }
+    /*   icon in dropdown search bar  */
+        .fa-2x{
+         color: white;
+        }
 
-  #primary_nav_wrap ul li:hover
-  {
-  	background:#f6f6f6;
-  }
 
-  #primary_nav_wrap ul ul
-  {
-  	display:none;
-   z-index: 1000;
-  	position:absolute;
-  	top:100%;
-  	left:0;
-  	background:#fff;
-  	padding:0
-  }
-
-  #primary_nav_wrap ul ul li
-  {
-  	float:none;
-  	/*width:200px*/
-  }
-
-  #primary_nav_wrap ul ul a
-  {
-  	line-height:120%;
-  	padding:10px 15px
-  }
-
-  #primary_nav_wrap ul ul ul
-  {
-  	top:0;
-  	left:100%
-  }
-
-  #primary_nav_wrap ul li:hover > ul
-  {
-  	display:block
-  }
-   /*    EXPERIMENTAL DROPDOWN NAV BAR CSS above */
     .clearfix:after {
         display: block;
         clear: both;
     }
-    /*.lowerHeaderWrapper */
-    .menu-wrap{
-        width: 100%;
-        margin-top: -40px;
-        /*padding-top: 7px;*/
-        /*background-color: #244f7a;*/
-        /*background-color: #1C6CA6;*/
-        /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);*/
-        /*border: 1px solid red;*/
+
+    .header-lower_wrapper{
+     border-bottom: 5px solid #175aa7;
     }
-    .lowerHeaderContent {
-        /*max-width: 1400px;*/
-        max-width: 1250px;
+
+
+      .header-lower_content {
+        max-width: 1600px;
         margin: 0 auto;
-        padding-bottom: 40px;
-    }
-    .menu#primary_nav_wrap {
-        /*width: 1000px;*/
-        margin-top: 14px;
-        margin-left: 15%;
-        display: inline-block;
-    }
-    .menu1 {
-        width: 100%;
-        height: 50px;
-        display: inline-block;
-        background-color: #cccccc;
-    }
-    .menu#primary_nav_wrap li {
-        margin: 0px;
-        list-style: none;
-        /*font-family:'Ek Mukta';*/
-    }
-    .menu#primary_nav_wrap a {
-        transition: all linear 0.15s;
-        /* pale grey */
-        /*color:#919191;*/
-        color: black;
-    }
-    .menu#primary_nav_wrap li:hover>a, .menu .current-item>a {
-        text-decoration: none;
-        color: #003366;
-    }
-    .menu#primary_nav_wrap .arrow {
-        font-size: 11px;
-        line-height: 0%;
-    }
+      }
+
+        /*  BEGIN DROPDOWN NAVBAR */
+        /* SOURCE CREDIT:  Code for dropdown navbar modified from Phil Hoyt's https://codepen.io/philhoyt/pen/ujHzd and Seb Kay's http://inspirationalpixels.com/tutorials/creating-a-dropdown-menu-with-html-css */
+
+        .header-lower_menu#header-lower_menu-wrapper {
+          width: 800px;
+          margin-left: 15%;
+          display: inline-block;
+          margin-top: -20px;
+        }
+          .header-lower_menu {
+            width: 100%;
+            display: inline-block;
+          }
+
+        .header-lower_menu#header-lower_menu-wrapper li {
+          margin: 0;
+          list-style: none;
+        }
+
+        .header-lower_menu#header-lower_menu-wrapper a {
+          transition: all linear 0.15s;
+          color: black;
+        }
+
+        .header-lower_menu#header-lower_menu-wrapper li:hover>a, .header-lower_menu .current-item>a {
+          text-decoration: none;
+          color:black;
+        }
+
+       .header-lower_menu#header-lower_menu-wrapper li >a, .header-lower_menu {
+         text-decoration: none;
+         color: black;
+       }
+
+       .header-lower_menu#header-lower_menu-wrapper .header-lower_menu-arrow {
+         font-size: 11px;
+        /* You should always specify line-height as a unitless number, (1, 1.5, 2, etc.) */
+         line-height: 0%;
+       }
+
     /*----- Top Level -----*/
-    .menu#primary_nav_wrap>ul>li {
+      .header-lower_menu#header-lower_menu-wrapper>ul>li {
         float: left;
-        /*display: inline-block;*/
         position: relative;
         font-size: 19px;
-    }
+      }
+
     /*  CONTROLS DROPDOWN MENU  */
-    .menu#primary_nav_wrap>ul>li>a {
+      .header-lower_menu#header-lower_menu-wrapper>ul>li>a {
         padding-left: 50px;
-        /*display: inline-block;*/
         text-decoration: none;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: bold;
         color: black;
-        /*font-family: Verdana, Ariel, sans-serif;*/
         font-family: "Helvetica Neue", Verdana, Ariel, sans-serif;
         font-weight: 400;
     }
-    .menu#primary_nav_wrap >ul>li:hover>a, .menu>ul>.current-item>a {
-        /*background:white;*/
-        /*text-decoration: underline;*/
+
+    /*  styles navbar header titles on hover (products, markets, etc.)*/
+      .header-lower_menu#header-lower_menu-wrapper >ul>li:hover>a, .header-lower_menu>ul>.current-item>a {
+        background:#175aa7;
         color: #aaaaaa;
-    }
+      }
+
     /*----- Bottom Level -----*/
-    .menu#primary_nav_wrap li:hover .sub-menu {
-     /* BRINGS SUB-MENUS ABOVE HERO IMAGE*/
+      .header-lower_menu#header-lower_menu-wrapper li:hover .header-lower_sub-menu {
+     /* BRINGS SUB-MENUS VISIBLE OVER HERO IMAGE*/
         z-index: 1000;
         opacity: 1;
-    }
-    .sub-menu {
+      }
+
+      .header-lower_sub-menu {
         width: 100%;
-        padding: 5px 0px;
+        padding: 5px 0;
         position: absolute;
         top: 100%;
-        left: 0px;
+        left: 0;
         z-index: -1;
         opacity: 0;
         transition: opacity linear 0.15s;
-        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
-        /*background:#2e2728;*/
-        background: white;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.3);
         font-size: 16px;
-         border-radius: 5px;
-    }
-    .sub-menu li {
+        border-radius: 0 0 3px 3px;
+     }
+
+     .header-lower_sub-menu li {
         display: block;
-        border-radius: 5px;
-    }
-    .sub-menu li a {
+        border-radius: 0 0 3px 3px;
+     }
+
+    /*color of sub-menu bars*/
+     .header-lower_sub-menu li a {
         padding: 2px 3px;
         display: block;
         text-decoration: none;
         font-size: 14px;
-        border-radius: 5px;
-    }
+         background: rgba(193, 187, 187, 0.2);
+     }
+
     /*color of sub-menu bars on hover*/
-    .sub-menu li a:hover, .sub-menu .current-item a {
-        background: #c3c4c7;
-        font-weight: bold;
-        border-radius: 5px;
-        /*font-size: 16px;*/
-    }
-    /*  END NEW DROPDOWN NAVBAR STYLING*/
+      .header-lower_sub-menu li a:hover, .header-lower_sub-menu .current-item a {
+        background: white;
+      }
 
- .heroImage{
-  /*background-image: url(images/homepage_slider_large/hero_sample.jpg);*/
-  width: 100%;
-  height:auto;
-  background-size: cover;
-  background-position: 50% 50%;
- }
-    #primary_nav_wrap
-    {
-    	margin-top:15px
-    }
+      #header-lower_menu-wrapper{
+    	  margin-top:15px
+      }
 
-    #primary_nav_wrap ul
-    {
-    	list-style:none;
-    	position:relative;
-    	float:left;
-    	margin:0;
-    	padding:0
-    }
+      #header-lower_menu-wrapper ul{
+      	list-style:none;
+      	position:relative;
+      	float:left;
+      	margin:0;
+      	padding:0
+      }
 
-    #primary_nav_wrap ul a
-    {
-    	display:block;
-    	color:#333;
-    	text-decoration:none;
-    	font-weight:700;
-    	/*font-size:12px;*/
-    	line-height:32px;
-    	padding:0 15px;
-    	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
-    }
+      #header-lower_menu-wrapper ul a{
+      	display:block;
+      	color:#333;
+      	text-decoration:none;
+      	font-weight:700;
+      /* You should always specify line-height as a unitless number, (1, 1.5, 2, etc.) */
+      	line-height:32px;
+      	padding:0 15px;
+    	  font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+      }
 
-    #primary_nav_wrap ul li
-    {
-    	position:relative;
-    	float:left;
-    	margin:0;
-    	padding:0
-    }
+      #header-lower_menu-wrapper ul li {
+      	position:relative;
+      	float:left;
+      	margin:0;
+      	padding:0
+      }
 
-    #primary_nav_wrap ul li.current-menu-item
-    {
-    	background:#ddd
-    }
+      #header-lower_menu-wrapper ul li.current-menu-item {
+      	background:#ddd
+      }
 
-    #primary_nav_wrap ul li:hover
-    {
-    	background:#f6f6f6
-    }
+      #header-lower_menu-wrapper ul li:hover {
+      	background:#f6f6f6;
+      }
 
-    #primary_nav_wrap ul ul
-    {
-    	display:none;
-    	position:absolute;
-    	top:100%;
-    	left:0;
-    	background:#fff;
-    	padding:0
-    }
+      #header-lower_menu-wrapper ul ul {
+      	display:none;
+      	position:absolute;
+      	top:100%;
+      	left:0;
+    	  background:rgba(255, 255, 255, 0.8);
+    	  padding:0
+      }
 
-    #primary_nav_wrap ul ul li
-    {
-    	float:none;
-    	/*width:200px*/
-    }
+      #header-lower_menu-wrapper ul ul li {
+    	  float:none;
+      }
 
-    #primary_nav_wrap ul ul a
-    {
-    	line-height:120%;
-    	padding:10px 15px
+      #header-lower_menu-wrapper ul ul a {
+      /* You should always specify line-height as a unitless number, (1, 1.5, 2, etc.) */
+      	line-height:120%;
+      	padding:10px 15px
+      }
+
+      #header-lower_menu-wrapper ul ul ul {
+      	top:0;
+      	left:100%
+      }
+
+      #header-lower_menu-wrapper ul li:hover > ul {
+      	display:block
+      }
+
+
+    .main-content_wrapper {
+      max-width: 100%;
+      margin: 0 auto;
+      padding-top: 20px
     }
 
-    #primary_nav_wrap ul ul ul
-    {
-    	top:0;
-    	left:100%
-    }
-
-    #primary_nav_wrap ul li:hover > ul
-    {
-    	display:block
-    }
-     /***********/
-
-    .mainContentWrapper {
-        /*max-width: 1400px;*/
-        max-width: 1250px;
-        margin: 0 auto;
-    }
-    .homepageContentContainer {
+    .blog-twitter_container {
         color: black;
         background-color: #cccccc;
+        flex: 1;
+        display: inline-flex;
     }
-    /* ----------------------*/
-    .blogNewsWrapper {
+
+
+    .blog-twitter_wrapper {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         overflow: hidden;
+        max-width: 1600px;
+        margin: 0 auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
-    .blogNewsWrapper .blogNewsContentContainer {
-        flex: 1;
-        display: inline-flex;
-        /*width:50%;*/
-    }
-    .blogNewsContentLeft {
+
+   
+    .blog-twitter_container .blog-twitter_content-left {
 /*  Different margins for left/right content wrappers needed to avoid a center margin that is "double-wide" since using flexbox on a parent element disables margin collapsing for its child elements  */
         margin: 40px 20px 40px 40px;
         background-color: white;
         padding: 50px;
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 16px;
+        line-height: 1.5;
     }
-    .blogNewsContentRight {
+
+    .blog-twitter_container .blog-twitter_content-right {
         margin: 40px 40px 40px 20px;
         background-color: white;
         padding: 50px;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.5;
+        flex-grow: 1;
     }
 
-    a:link.homepageContentHeading {
+    a:link.blog-twitter_colored-block {
+        background-color: #175aa7;
+        padding: 10px;
+        color: white;
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .blog-twitter_colored-block {
         background-color: #175aa7;
         padding: 10px;
         color: white;
@@ -421,36 +396,19 @@
         font-size: 18px;
         font-weight: bold;
     }
-    .homepageContentHeading {
-        background-color: #175aa7;
-        padding: 10px;
-        color: white;
-        display: inline-block;
-        font-size: 18px;
-        font-weight: bold;
-    }
+
     .homepageContentTitle {
         margin:20px 0 20px 0;
-        line-height: 25px;
+        line-height: 2;
         font-size: 20px;
         font-weight: bold;
         text-transform: uppercase;
     }
-    .homepageContentColumn {
-        /*float: left;*/
-        display: inline-flex;
-        width: 46%;
-        box-sizing: border-box;
-        margin: 40px 15px 40px 25px;
-        background-color: white;
-        padding: 25px;
-        font-size: 14px;
-        line-height: 16px;
-    }
+
     .homepageContentText {
-        line-height: 20px;
+        line-height: 1.5;
     }
-}
+
 
 #measurementAndAuto {
     padding-right: 10px;
@@ -460,25 +418,28 @@
     padding-bottom: 20px;
 }
 
-
 .searchDropdownContainer{
  margin:0 auto;
- max-width: 1250px;
- border-color: red;
+ max-width: 1600px;
 }
 
-/*********************/
-#wrap {
-    height: 200px;
-    width: 200px;
-    border: 1px solid red;
+#header-upper_visible-search-icon{
+ width:62px;
+ height: 28px;
+}
+
+#header-upper_dropdown-search_wrapper {
+    height: 40px;
+    width: 300px;
+    margin-top: 29px;
+    position: relative;
+    right: 230px;
 }
 #slider {
     overflow-y: hidden;
     max-height: 200px;
     -webkit-transition: all .5s cubic-bezier(0, 1, 0.5, 1);
-    transition: all .5s cubic-bezier(0, 1, 0.5, 1);
-    background: pink;
+    transition: all .5s cubic-bezier(.48, .49, .76, .73);
     height: inherit;
     width: inherit;
 }
@@ -488,45 +449,27 @@
 #toggle + label {
     padding: 1px 6px;
     text-align: center;
-    border-radius: 2px;
-    background: rgb(221, 221, 221);
-    border: 1px outset buttonface;
     margin-bottom: 2px;
     display: inline-block;
     cursor: pointer;
 }
 /* most important part is here: */
-#toggle:not(:checked) ~ #wrap > #slider {
+#toggle:not(:checked) ~ #header-upper_dropdown-search_wrapper > #slider {
     max-height: 0;
 }
-/*********************/
 
-
-/*.searchBoxContainer {
-    width: 290px;*/
-    /*height: 50px;*/
-    /*display:block;
-    float: right;
-    margin-top: 12px;
-    margin-right: 230px;
-    border: 1px solid red;*/
-    /*position: relative;
-            right: 25px;
-            left: 70%;
-            top: -40px;*/
-}
 
 #search {
-    width: 250px;
-     height: 18px;
-     /*margin-left: 725px;*/
-    /*border-right: 5px solid green;*/
+    width: 230px;
+     height: 30px;
     border-radius: 3px 0 0 3px;
-
 }
 
 input[placeholder] {
-    font-size: 14px;
+    font-size: 20px;
+    width: 220px;
+    height:35px;
+    padding-left: 10px;
 }
 
 .blackFooterContainer {
@@ -534,17 +477,14 @@ input[placeholder] {
     padding-left: 50px;
     position: relative;
     top: 28px;
-    /*border: 1px solid red;*/
 }
 
 .fontAwesomeFooters {
     display: inline-block;
     margin-right: 25px;
-    /*border: 1px solid red;*/
 }
 
 .facebookWhite {
-    /*background-color: white;*/
     display: inline-block;
 }
 
@@ -563,7 +503,7 @@ A.whiteLink:hover {
 
 }
 
-}
+
 
 /* for tablet devices */
 @media screen and (max-width: 1024px) {
@@ -629,10 +569,10 @@ TH {
     BORDER-RIGHT: medium none
 }
 IMG {
-    BORDER-BOTTOM: white 0px solid;
-    BORDER-LEFT: white 0px solid;
-    BORDER-TOP: white 0px solid;
-    BORDER-RIGHT: white 0px solid
+    BORDER-BOTTOM: white 0 solid;
+    BORDER-LEFT: white 0 solid;
+    BORDER-TOP: white 0 solid;
+    BORDER-RIGHT: white 0 solid
 }
 A:link {
     BORDER-BOTTOM: medium none;
@@ -644,17 +584,6 @@ A:link {
     FONT-WEIGHT: normal;
     BORDER-RIGHT: medium none;
     text-decoration:none;
-}
-A:active {
-    BORDER-BOTTOM: medium none;
-    BORDER-LEFT: medium none;
-    FONT-FAMILY: Verdana, Arial, sans-serif;
-    COLOR: #003;
-    FONT-SIZE: 11px;
-    BORDER-TOP: medium none;
-    FONT-WEIGHT: bolder;
-    BORDER-RIGHT: medium none;
-    text-decoration: none;
 }
 A:visited {
     BORDER-BOTTOM: medium none;
@@ -675,6 +604,17 @@ A:hover {
     BORDER-TOP: medium none;
     FONT-WEIGHT: normal;
     BORDER-RIGHT: medium none
+}
+A:active {
+    BORDER-BOTTOM: medium none;
+    BORDER-LEFT: medium none;
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    COLOR: #003;
+    FONT-SIZE: 11px;
+    BORDER-TOP: medium none;
+    FONT-WEIGHT: bolder;
+    BORDER-RIGHT: medium none;
+    text-decoration: none;
 }
 .bodytext {
     FONT-FAMILY: Verdana, Arial, sans-serif;
@@ -1233,6 +1173,7 @@ A.footer:hover {
     background-color: #2f353b;
     COLOR: white;
     FONT-SIZE: 12px;
+    /* You should always specify line-height as a unitless number, (1, 1.5, 2, etc.) */
     line-height: 150%;
     FONT-WEIGHT: normal;
     TEXT-DECORATION: none;
@@ -1338,7 +1279,7 @@ A.prodbar:hover {
 }
 A.textlink:link {
     FONT-FAMILY: Verdana, Arial, sans-serif;
-    COLOR: #9f9f9f;
+    /*COLOR: #9f9f9f;*/
     COLOR: white;
     FONT-SIZE: 12px;
     FONT-WEIGHT: normal;

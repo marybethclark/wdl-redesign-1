@@ -1,216 +1,404 @@
-@import url(http://weloveiconfonts.com/api/?family=zocial);
-/** {
-margin: 0;
-padding: 0;
-}*/
-@font-face {
-font-family: 'zocial', sans-serif;
-}
-[data-icon]:before {
-font-family: 'zocial';
-content: attr(data-icon);
--webkit-font-smoothing: antialiased;
-}
-body {
-font-family: 'Verdana', sans-serif;
-}
-a {
-text-decoration: none;
-/*-webkit-transition: all .2s linear;
+        footer body {
+        font-family: 'Verdana', sans-serif;
+    }
+
+    footer a {
+        text-decoration: none;
+        font-size: 13px !important;
+        /*-webkit-transition: all .2s linear;
 -moz-transition: all .2s linear;
 -ms-transition: all .2s linear;
 -o-transition:  all .2s linear;
 transition: all .2s linear;*/
-}
+    }
 
-.clear {
-clear: both;
-}
+    footer .clear {
+        clear: both;
+    }
 
-/******************/
+    footer {
+        background-color: #2E3639;
+        /*position: absolute;
+right:0;
+bottom:0;
+left:0;*/
+        width: 100%;
+        z-index: 1;
+    }
 
-footer {
-background-color: #2E3639;
-position: relative;
-z-index: 1;
-}
+    footer>ul {
+        list-style: none outside none;
+        margin: 0 auto;
+        /*max-width: 1400px;*/
+        width: 100%;
+        max-width: 1250px;
+        overflow: hidden;
+        padding: 0 50px 0 70px;
+        box-sizing: border-box;
+        position: relative;
+    }
 
-footer > ul {
-list-style: none outside none;
-margin: 0 auto;
-max-width: 1200px;
-overflow: hidden;
-padding: 25px 0;
-position: relative;
-width: 95%;
-}
-footer > ul li {
-float: left;
-padding: 20px 15px;
-width: 33.3%;
--webkit-box-sizing:border-box;
--moz-box-sizing:border-box;
-box-sizing:border-box;
-}
-/*footer > ul li:first-child {
+    footer>ul li {
+        float: left;
+        padding: 40px 25px 30px 25px;
+        width: 33.3%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    /* > ul li:first-child {
 padding-left: 0;
-}*/
-/*footer > ul li:nth-child(3) {
+}
+*/
+    /* > ul li:nth-child(3) {
 padding-right: 0;
-}*/
-footer > ul li .icon {
-color: #999999;
-float: left;
-font-size: 80px;
-line-height: 80px;
 }
-footer > ul li .text {
-color: #848889;
-font-size: 13px;
-line-height: 20px;
-margin-left: 10px;
-position: relative;
-text-align: left;
-}
-/*.text{
+*/
+
+    footer>ul li .icon {
+        color: #999999;
+        float: left;
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    footer>ul li .footer_text {
+        color: #848889;
+        font-size: 13px;
+        line-height: 20px;
+        margin-left: 10px;
+        position: relative;
+        text-align: left;
+    }
+    /*.text{
 color: #FFFFFF;
 font-size: 24px;
 font-weight: bold;
 margin-bottom: 10px;
-}*/
+}
+*/
 
-#newsletterButtonPositioning{
- position: relative;
- top:11;
- right:5;
- border-radius: 0 2px 2px 0;
-}
- .text .footerHeader{
- color: #FFFFFF;
- font-size: 20px;
- font-weight: bold;
- margin-bottom: 10px;
-}
-.text a {
-/*border-bottom: 1px dotted transparent;*/
-color:#848889;
-/*font-weight: bold;*/
-}
-.text a:hover {
-color:white;
+    footer input {
+        border: initial;
+        padding: initial;
+    }
+/*my old orange one*/
+ /*#footer_newsletter-subscribe_button {
+        position: relative;
+        top: 10px;
+        right: 5px;
+        border-radius: 0 2px 2px 0;
+    }*/
+
+.footer_newsletter-subscribe_container{
+ height:55px;
+ width: 258px;
+padding-top: 40px;
 }
 
-/*  MAY NOT BE NEEDED if it's in regular css file- REMOVES BULLETS FROM contact, links, and subscribe "columns"*/
- ul{
-  list-style: none;
- }
+    /*  CODE FROM Campaigner-STYLED NEWSLETTER SUBSCRIBE FORM  */
 
-/* black bar bottom-left*/
-footer .bar {
-background-color: #1E2629;
-padding: 20px 0;
-}
-footer .bar-wrap {
-font-size: 12px;
-margin: 0 auto;
-max-width: 1150px;
-position: relative;
-width: 95%;
-}
-.links {
-float: left;
-list-style: none outside none;
-position: relative;
-}
-.links li {
-float: left;
-margin-right: 10px;
-}
-.links a {
-color: #778888;
-}
-.links a:hover {
-color: #FFFFFF;
+    .formContainer{
+     margin:0 auto;
+     /*border:1px solid red;*/
+     background-color:#2E3639;
+     width: 260px;
+     height: 30px;
+     /*padding-top: 40px;*/
 }
 
-/* black bar bottom-right?*/
-.social {
-position: absolute;
-/*right: 0px;*/
-right: 10%;
-/*top: 0;*/
-}
-.social a {
+    .radgrid {
+        color: #000000;
+        font-family: Verdana;
+        font-size: 12px;
+        font-weight: normal;
+        text-decoration: none;
+        font-style: Bold;
+        margin-left: 25px;
+    }
+
+    #previewWrapper{
+     height: 60px;
+     width: 260px;
+    }
+
+    .SignupFormPreview {
+        padding: 1px 0 0 1px;
+        font-size: 12px;
+        color: #000000;
+        font-family: Verdana;
+        font-weight: normal;
+        text-align: Left;
+        text-decoration: none;
+    }
+
+    .input-box{
+     /*width: 206px !important;*/
+     height: 21px !important;
+     border-radius: 3px 0 0 3px;
+     border-style: none;
+     font-size: 15px !important;
+    }
+
+    .btnSection{
+      height:60px;
+      border-color: pink;
+    }
+    .submit-button_wrapper{
+      width: 60px;
+      position: relative;
+      right: -197px;
+      top: -22px;
+    }
+
+    .btnStyle {
+        background-color: green;
+        color: white;
+        font-weight: bolder;
+        border-style: none;
+        height: 22px;
+        text-transform: uppercase;
+        border-radius: 0 3px 3px 0;
+        letter-spacing: 1px;
+        padding: 3px;
+    }
+
+    #Label1{
+     display:inline-block;
+     width:105px;
+    }
+
+    #PopupMasterContentArea {
+        width: 316.28px;
+    }
+    /****************************/
+
+    .ErrorMessageArea {
+        padding: 10px 0 10px 10px;
+        color: Red;
+        font-family: Times New Roman, Arial, Sans-Serif;
+        font-size: large;
+    }
+
+    form {
+        display: block;
+        /*overflow: auto;*/
+        margin-left: 0;
+        padding: 0 12px 5px 0;
+    }
+
+    #gridContainer {
+        overflow: auto;
+    }
+
+    .MailingListSection {
+        margin-left: 13px;
+        margin-top: 5px;
+    }
+
+    #FormFieldsTable label {
+        width: 10em;
+    }
+
+    label.error {
+        white-space: nowrap;
+        display: block;
+        color: red;
+        padding-left: .5em;
+        vertical-align: top;
+        padding: 2px
+    }
+
+    .submit {
+        margin-left: 12em;
+    }
+
+    .ui-datepicker-trigger {
+        margin-left: 4px;
+    }
+
+    .MailingListSection {
+        text-align: left;
+        padding: 8px 1px 1px 0;
+    }
+
+    .MailingListSection div {
+        padding: 0 0 0 7px;
+    }
+
+    .MailingListHeader {
+        margin-bottom: 5px;
+    }
+
+/*  I DON'T KNOW WHAT THIS IS FOR */
+    /*.LanguageDropdown {
+        width: 480px !important;
+        margin: 0 auto !important;
+        height: 30px;
+    }*/
+
+    .LanguageDropdownList {
+        float: right;
+    }
+
+    .MailingListSection>.SignupFormPreview {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .SignupFormPreview select {
+        max-width: 204px;
+    }
+    /*  CLOSES CODE FROM Campaigner-STYLED NEWSLETTER SUBSCRIBE FORM  */
+
+    footer .footer_text H4 {
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    footer .footer_text a {
+        /*border-bottom: 1px dotted transparent;*/
+        color: #848889;
+        /*font-weight: bold;*/
+    }
+    /*  REMOVES BULLETS FROM contact, footer links,  and subscribe "columns"*/
+
+    ul {
+        list-style: none;
+    }
+
+    footer .footer_bar-wrapper {
+        background-color: #1E2629;
+        height: 65px;
+        /*padding: 20px 0;*/
+    }
+
+    footer .footer_bar-content {
+        font-size: 12px;
+        margin: 0 auto;
+        /*max-width: 1400px;*/
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 1250px;
+        padding: 10px 0 20px 20px;
+        position: relative;
+    }
+
+    footer .footer_links {
+        float: left;
+        list-style: none outside none;
+        position: relative;
+    }
+
+    footer .footer_links li {
+        float: left;
+        margin-right: 25px;
+    }
+
+    footer .footer_links a {
+        color: #778888;
+    }
+
+    footer .footer_links a:hover {
+        color: #FFFFFF;
+    }
+
+    footer .footer_social-media_container {
+        position: absolute;
+        right: 8%;
+    }
+    /*footer a {
 color: #778888;
 margin-left: 20px;
-}
-.social a:hover {
-color: #FFFFFF;
-}
-.social .icon {
-display: inline-block;
-font-size: 26px;
-margin-right: 5px;
-vertical-align: middle;
--webkit-transition: -webkit-transform .3s linear;
--moz-transition: -moz-transform .3s linear;
--ms-transition: -ms-transform .3s linear;
--o-transition:  -o-transform .3s linear;
-transition: transform .3s linear;
-}
-/*.social a:hover  .icon {
--webkit-transform: rotate(360deg);
--moz-transform: rotate(360deg);
--ms-transform: rotate(360deg);
--o-transform: rotate(360deg);
-transform: rotate(360deg);
 }*/
-.social .info {
-display: inline-block;
-}
-.social .info .follow {
-display: block;
-}
-.social .info .num {
-display: block;
-}
-.copyright {
-color: #535f5f;
-margin-left: 35px;
-/*position: absolute;
-left:4%;*/
-}
 
-/*responsive styling - currently not overriding regular styling*/
-@media screen and (max-width: 1000px){
-.links, .social, .copyright{
-float:none;
-text-align:center;
-}
-.social {
-position:relative;
-margin:10px 0;
-}
-.links li {
-display:inline-block;
-float:none;
-}
-.bar {
-position:relative;
-}
-.bar-wrap {
-margin-bottom:0;
-}
-}
-@media screen and (max-width: 835px)  {
-footer > ul li {
-float:none;
-width:auto;
-/*color:blue;*/
-}
-}
-@media screen and (max-width: 768px)  {
-.links li {
-margin-right:5px;
-}
-}
+    footer a .fa-3x {
+        color: #778888;
+        padding-right: 10px;
+    }
+
+    footer a:hover {
+        color: #FFFFFF;
+    }
+
+    footer a:hover .fa-3x {
+        color: #FFFFFF;
+    }
+
+    footer .footer_social-media_container .icon {
+        display: inline-block;
+        font-size: 30px;
+        margin-right: 5px;
+        vertical-align: middle;
+        -webkit-transition: -webkit-transform .3s linear;
+        -moz-transition: -moz-transform .3s linear;
+        -ms-transition: -ms-transform .3s linear;
+        -o-transition: -o-transform .3s linear;
+        transition: transform .3s linear;
+    }
+
+    footer .footer_social-media_container .icon .fa-3x {
+        display: inline-block;
+        font-size: 30px !important;
+        margin-right: 5px;
+        vertical-align: middle;
+        -webkit-transition: -webkit-transform .3s linear;
+        -moz-transition: -moz-transform .3s linear;
+        -ms-transition: -ms-transform .3s linear;
+        -o-transition: -o-transform .3s linear;
+        transition: transform .3s linear;
+    }
+
+    footer .footer_social-media_container .info {
+        display: inline-block;
+    }
+
+    footer .footer_social-media_container .info {
+        display: block;
+    }
+
+    footer .footer_social-media_container .info .num {
+        display: block;
+    }
+
+    footer .copyright {
+        color: #535f5f;
+        /*margin-left: 20px;*/
+        margin-top: 10px
+    }
+    /*responsive styling - currently not overriding regular styling*/
+
+    footer @media screen and (max-width: 1000px) {
+        .footer_links, .footer_social-media_container, .copyright {
+            float: none;
+            text-align: center;
+        }
+        footer .footer_social-media_container {
+            position: relative;
+            margin: 10px 0;
+        }
+        footer .footer_links li {
+            display: inline-block;
+            float: none;
+        }
+        footer .footer_bar-wrapper {
+            position: relative;
+        }
+        footer .footer_bar-content {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (max-width: 835px) {
+        footer>ul li {
+            float: none;
+            width: auto;
+        }
+    }
+
+    footer @media screen and (max-width: 768px) {
+        .footer_links li {
+            margin-right: 5px;
+        }
