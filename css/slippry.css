@@ -1,5 +1,5 @@
 /* Portfolio */
-.portfolio .sy-controls {
+/*.portfolio .sy-controls {
   display: block;
 }
 .portfolio .sy-pager {
@@ -9,7 +9,7 @@
   background-color: #fff;
   padding: 1em;
 
-}
+}*/
 /**/
 @-webkit-keyframes left-right {
     0% {
@@ -136,7 +136,7 @@
     z-index: 2
 }
 
-.sy-slide.kenburns {
+/*.sy-slide.kenburns {
     width: 140%;
     left: -20%
 }
@@ -163,7 +163,7 @@
     -webkit-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards
-}
+}*/
 
 .sy-slide.sy-active {
     z-index: 3
@@ -289,9 +289,12 @@
     /*bottom: 2em;*/
     z-index: 12;
     /*left: 50%*/
-    left: 17%;
-    bottom: 25%;
-    font-size: 40px
+    left: 7%;
+    bottom: 5%;
+    font-size: 40px;
+    height: 100px;
+    width:600px;
+    background-color: black;
 }
 
 .sy-caption-wrap .sy-caption {
@@ -315,7 +318,6 @@
  color:green;
 
 }
-
 
 .sy-caption-wrap .sy-caption a:link, .sy-caption-wrap .sy-caption a:visited {
     color: #e24b70;
@@ -391,7 +393,7 @@
     transition: padding 600ms ease
 }
 
-.highlight table td {
+/*.highlight table td {
     padding: 5px
 }
 
@@ -674,15 +676,15 @@
     font-family: 'source-code-pro', monospace;
     font-size: 0.84em;
     overflow-x: auto
-}
+}*/
 
-* {
+/** {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box
-}
+}*/
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -690,12 +692,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 100%;
     font: inherit;
     vertical-align: baseline
-}
+}*/
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+/*article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block
-}
-
+}*/
+/*
 body {
     line-height: 1.48;
     -webkit-font-smoothing: antialiased
@@ -782,7 +784,7 @@ h5 {
 
 h6 {
     font-size: 0.63em
-}
+}*/
 
 @-webkit-keyframes jumpings {
     0% {
@@ -832,7 +834,7 @@ h6 {
     }
 }
 
-a.button-link {
+/*a.button-link {
     display: inline-block;
     color: #fff;
     background-color: #31ACE2;
@@ -881,12 +883,12 @@ a.button-link.download:hover:after {
 a.button-link:hover {
     background-color: #1c91c4;
     color: #fff
-}
+}*/
 
-section {
+/*section {
     margin: 0 0 1em
-}
-
+}*/
+/*
 @media only screen and (max-width: 600px) {
     section {
         margin-bottom: 0
@@ -974,7 +976,7 @@ a:hover {
 
 h2.slider-title {
     margin-top: 0
-}
+}*/
 
 .half {
     display: inline-block;
@@ -1033,7 +1035,7 @@ h2.slider-title {
     }
 }
 
-a.github-download {
+/*a.github-download {
     font-size: 2em;
     font-weight: 700;
     margin: 0.25em auto;
@@ -1120,7 +1122,7 @@ code {
         text-align: center;
         margin-bottom: 1em
     }
-}
+}*/
 
 .front-page .slide_box {
     max-height: 500px
@@ -1205,7 +1207,7 @@ section.settings h3 {
     border-bottom: 1px solid #bcc5cd
 }
 
-.example-tiles .tile {
+/*.example-tiles .tile {
     display: inline-block;
     padding: 0.8em 1em;
     background-color: #31ACE2;
@@ -1267,9 +1269,9 @@ section.settings h3 {
 
 .example-tiles .tile.active {
     background-color: #1880ae
-}
+}*/
 
-.portfolio .sy-controls {
+/*.portfolio .sy-controls {
     display: block
 }
 
@@ -1366,9 +1368,9 @@ section.settings h3 {
     text-decoration: none;
     display: block;
     color: #222
-}
+}*/
 
-.shop .sy-box {
+/*.shop .sy-box {
     overflow: hidden
 }
 
@@ -1515,9 +1517,9 @@ section.settings h3 {
         max-width: 590px;
         width: 50%
     }
-}
+}*/
 
-.thumb-box {
+/*.thumb-box {
     padding: 1.4em 0 1em;
     margin-left: -1%;
     width: 102%
@@ -1556,9 +1558,9 @@ section.settings h3 {
     -o-transition: opacity 0.2s;
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s
-}
+}*/
 
-.newsletter {
+/*.newsletter {
     border: 2px solid #e24b70;
     padding: 10px 15px
 }
@@ -1640,4 +1642,4 @@ section.settings h3 {
         height: auto !important;
         margin-left: 145px !important
     }
-}
+}*/
