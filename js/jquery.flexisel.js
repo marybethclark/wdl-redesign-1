@@ -1,5 +1,6 @@
 /*
 * File: jquery.flexisel.js
+http://www.jqueryscript.net/slider/Clean-Responsive-jQuery-Carousel-Plugin-flexisel.html
 * Version: 2.2.0
 * Description: Responsive carousel jQuery plugin
 * Author: 9bit Studios
@@ -10,7 +11,6 @@
 */
 
 
-// GO TO http://slippry.com/settings/ FOR MORE CUSTOMIZEABLE OPTIONS
 (function ($) {
 
     $.fn.flexisel = function (options) {

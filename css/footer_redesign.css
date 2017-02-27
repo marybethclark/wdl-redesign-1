@@ -80,13 +80,13 @@ margin-bottom: 10px;
             }
 
 
-            .footer_newsletter-subscribe_container {
+            .footer_newsletter-input_wrapper {
                 height: 55px;
                 width: 258px;
                 padding-top: 40px;
             }
 
-            .footer_newsletter-subscribe_tagline {
+            .footer_newsletter_tagline {
                 font-size: 16px;
             }
             /*  CODE FROM Campaigner-STYLED NEWSLETTER SUBSCRIBE FORM  */
@@ -133,18 +133,20 @@ margin-bottom: 10px;
                 font-size: 15px !important;
             }
 
-            .btnSection {
+            /*.btnSection {
                 height: 60px;
-            }
+            }*/
 
-            .submit-button_wrapper {
+         /*  END CODE FROM Campaigner-STYLED NEWSLETTER SUBSCRIBE FORM  */
+
+            .footer_newsletter_button_wrapper {
                 width: 60px;
                 position: relative;
                 right: -196px;
                 top: -22px;
             }
 
-            .btnStyle {
+            .footer_newsletter_button-style {
                 /*background-color: green;*/
                 color: white;
                 border-style: none;
@@ -166,7 +168,7 @@ margin-bottom: 10px;
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#4BA614, endColorstr=#008c00);
             }
 
-            .btnStyle:hover {
+            .footer_newsletter_button-style:hover {
                 /*background-color: #007300;*/
                 /*border:1px solid #224b09;*/
                 background-color: #008C00;
@@ -179,22 +181,22 @@ margin-bottom: 10px;
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#008C00, endColorstr=#008C00);
             }
 
-            #Label1 {
+            /*#Label1 {
                 display: inline-block;
                 width: 105px;
-            }
+            }*/
 
-            #PopupMasterContentArea {
+            /*#PopupMasterContentArea {
                 width: 316.28px;
-            }
+            }*/
             /****************************/
 
-            .ErrorMessageArea {
+            /*.ErrorMessageArea {
                 padding: 10px 0 10px 10px;
                 color: Red;
                 font-family: Times New Roman, Arial, Sans-Serif;
                 font-size: large;
-            }
+            }*/
 
             form {
                 display: block;
@@ -203,14 +205,14 @@ margin-bottom: 10px;
                 /*padding: 0 12px 5px 0;*/
             }
 
-            #gridContainer {
+            /*#gridContainer {
                 overflow: auto;
             }
 
             .MailingListSection {
                 margin-left: 13px;
                 margin-top: 5px;
-            }
+            }*/
 
             #FormFieldsTable label {
                 width: 10em;
@@ -229,7 +231,7 @@ margin-bottom: 10px;
                 margin-left: 12em;
             }
 
-            .ui-datepicker-trigger {
+            /*.ui-datepicker-trigger {
                 margin-left: 4px;
             }
 
@@ -244,13 +246,13 @@ margin-bottom: 10px;
 
             .MailingListHeader {
                 margin-bottom: 5px;
-            }
+            }*/
             /*  I DON'T KNOW WHAT THIS IS FOR */
-            /*.LanguageDropdown {
+            .LanguageDropdown {
         width: 480px !important;
         margin: 0 auto !important;
         height: 30px;
-    }*/
+    }
 
             .LanguageDropdownList {
                 float: right;
@@ -274,24 +276,22 @@ margin-bottom: 10px;
             }
 
             footer .footer_text a {
-                /*border-bottom: 1px dotted transparent;*/
                 color: #848889;
                 font-family: "LatoMedium";
-                /*font-weight: bold;*/
             }
-            /*  REMOVES BULLETS FROM contact, footer links,  and subscribe "columns"*/
 
+            /*  REMOVES BULLETS FROM contact, footer links,  and subscribe "columns"*/
             ul {
                 list-style: none;
             }
 
-            footer .footer_bar-wrapper {
+            footer .footer_bar_container {
                 background-color: #1E2629;
                 height: 65px;
                 /*padding: 20px 0;*/
             }
 
-            footer .footer_bar-content {
+            footer .footer_bar_content {
                 font-size: 12px;
                 margin: 0 auto;
                 /*max-width: 1400px;*/
@@ -403,10 +403,10 @@ margin-left: 20px;
                     display: inline-block;
                     float: none;
                 }
-                footer .footer_bar-wrapper {
+                footer .footer_bar_container {
                     position: relative;
                 }
-                footer .footer_bar-content {
+                footer .footer_bar_content {
                     margin-bottom: 0;
                 }
             }

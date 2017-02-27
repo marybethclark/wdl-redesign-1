@@ -1,4 +1,6 @@
-/* -- TABLE OF CONTENTS ------------------
+/*******************************************
+*********   TABLE OF CONTENTS    ***********
+********************************************
 
 1. UNIVERSAL STYLES (TYPOGRAPHY, ETC.)
 2. STRUCTURE
@@ -9,16 +11,17 @@
 7. LEFT NAV
 8. PAGE BODY CONTENT
 9. HOMEPAGE CONTENT
-. RESERVED FOR FUTURE PAGES
+10. ABOUT PAGE CONTENT
 . RESERVED FOR FUTURE PAGES
 . TABLE ELEMENTS
 . FOOTER (See css/footer_redesign)
 . MEDIA QUERIES (RESPONSIVENESS)
------------------------------------------- */
+  ORIGINAL WEBSITE STYLILNG
 
 
-/* -------------------------------------------
-[Color Codes]
+  ********************************************
+  ***************   COLORS    ****************
+  ********************************************
 
 left nav (old site)
 #0066cc
@@ -37,6 +40,7 @@ text links
 color: #2200CC
 (new)
 color: #a7175a
+hover: #175aa7
 
 font-awesome icon links in header-upper_content
 color:#dddddd
@@ -59,7 +63,9 @@ footer bottom
  footer links on hover
  #FFFFFF
  ------------------------------------------ */
-
+.line-width-test{
+ color:red;
+}
 
 
      /********************************************/
@@ -84,8 +90,8 @@ footer bottom
         max-width: 1600px;
         height: 59px;
         margin: 0 auto;
-        /*padding-bottom: 5px;*/
     }
+
     .header-upper_icons {
         padding-right: 15px;
         margin-top: 10px;
@@ -95,26 +101,37 @@ footer bottom
         font-family: "Helvetica Neue", Arial, sans-serif;
         letter-spacing: 1.7px;
     }
+
     /* FONT AWESOME (fa) ICON STYLING */
     .fa-3x {
         color: #dddddd;
         font-size: 2.5em;
     }
     .fa-3x:hover {
-        /*color: #aaaaaa;*/
         color: white;
     }
+
     .header-upper_text {
         padding-top: 3px;
-            /*font-weight: 200;*/
-            letter-spacing: 1.4px;
+        letter-spacing: 1.4px;
+        font-weight: 100;
+        font-size: 11px;
+        color: white;
     }
+
+    .header-upper_phonenum{
+     font-size: 25px;
+    padding-top: 7px;
+    font-weight: 100;
+    color: white;
+    }
+
 
     /***********************************
     ******  DROPDOWN SEARCH BAR  *******
     ************************************/
 
-    /*   icon in dropdown search bar  */
+    /*   magnifying glass icon in dropdown search bar  */
     .fa-2x {
         color: white;
         size: 8px;
@@ -124,6 +141,7 @@ footer bottom
         width: 62px;
         height: 28px;
     }
+
     #header-upper_dropdown-search_wrapper {
         height: 40px;
         width: 300px;
@@ -131,6 +149,7 @@ footer bottom
         position: relative;
         right: 230px;
     }
+
     #slider {
         overflow-y: hidden;
         max-height: 200px;
@@ -139,9 +158,11 @@ footer bottom
         height: inherit;
         width: inherit;
     }
+
     #toggle {
         display: none;
     }
+
     #toggle+label {
         padding: 1px 6px;
         text-align: center;
@@ -149,22 +170,26 @@ footer bottom
         display: inline-block;
         cursor: pointer;
     }
+
     /* most important part is here: */
     #toggle:not(:checked)~#header-upper_dropdown-search_wrapper>#slider {
         max-height: 0;
     }
+
     #search-input {
         width: 249px;
         height: 25px;
         border-radius: 3px 0 0 3px;
         border-right: none;
     }
+
     /*to maintain height of dropdown search bar*/
     /*#search_static-page {
  width: 249px;
  height: 17px;
  border-radius: 3px 0 0 3px;
 }*/
+
     input[placeholder] {
         font-size: 20px;
         width: 220px;
@@ -212,23 +237,18 @@ footer bottom
         filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#008C00, endColorstr=#008C00);
     }
 
-
-
-
-
     .clearfix:after {
         display: block;
         clear: both;
     }
-    .header-lower_wrapper {
-        /*border-bottom: 5px solid #175aa7;*/
+    .header-lower_stripe {
         border-bottom: 5px solid #17a2a7;
     }
-    .header-lower_content {
+    .header-lower_container {
         max-width: 1600px;
         margin: 0 auto;
     }
-    .wdl-logo_container {
+    .wdl-logo_wrapper {
         width: 215px;
         padding-left: 30px;
         padding-top: 15px;
@@ -292,13 +312,11 @@ footer bottom
         font-family: "Helvetica Neue", Verdana, Ariel, sans-serif;
         font-weight: 400;
     }
+
     /*  styles navbar header titles on hover (products, markets, etc.)*/
     .header-lower_menu#header-lower_menu-wrapper>ul>li:hover>a, .header-lower_menu>ul>.current-item>a {
         background: #175aa7;
         color: white;
-        /*alternate color combo*/
-        /*background-color: #17a2a7;
-        color: black;*/
     }
     /*----- Bottom Level -----*/
     .header-lower_menu#header-lower_menu-wrapper li:hover .header-lower_sub-menu {
@@ -306,9 +324,11 @@ footer bottom
         z-index: 1000;
         opacity: 1;
     }
+
     .header-lower_sub-menu {
         width: 100%;
-        padding: 5px 0;
+        /*padding: 5px 0;*/
+        padding: 2px 2px 2px 2px;
         position: absolute;
         top: 100%;
         left: 0;
@@ -317,13 +337,15 @@ footer bottom
         transition: opacity linear 0.15s;
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
         background: rgba(0, 0, 0, 0.3);
-        font-size: 16px;
+        font-size: 14px;
         border-radius: 0 0 3px 3px;
     }
+
     .header-lower_sub-menu li {
         display: block;
         border-radius: 0 0 3px 3px;
     }
+
     /*color of sub-menu bars*/
     .header-lower_sub-menu li a {
         padding: 2px 3px;
@@ -332,13 +354,16 @@ footer bottom
         font-size: 14px;
         background: rgba(193, 187, 187, 0.2);
     }
+
     /*color of sub-menu bars on hover*/
     .header-lower_sub-menu li a:hover, .header-lower_sub-menu .current-item a {
         background: white;
     }
+
     #header-lower_menu-wrapper {
         margin-top: 15px
     }
+
     #header-lower_menu-wrapper ul {
         list-style: none;
         position: relative;
@@ -346,9 +371,11 @@ footer bottom
         margin: 0;
         padding: 0
     }
+
     #header-lower_menu-wrapper ul a {
         display: block;
         color: #333;
+        /*color: red;*/
         text-decoration: none;
         font-weight: 700;
         /* You should always specify line-height as a unitless number, (1, 1.5, 2, etc.) */
@@ -356,18 +383,22 @@ footer bottom
         padding: 0 15px;
         font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
     }
+
     #header-lower_menu-wrapper ul li {
         position: relative;
         float: left;
         margin: 0;
         padding: 0
     }
+
     #header-lower_menu-wrapper ul li.current-menu-item {
         background: #ddd
     }
+
     #header-lower_menu-wrapper ul li:hover {
         background: #f6f6f6;
     }
+
     #header-lower_menu-wrapper ul ul {
         display: none;
         position: absolute;
@@ -376,36 +407,36 @@ footer bottom
         background: rgba(255, 255, 255, 0.8);
         padding: 0
     }
+
     #header-lower_menu-wrapper ul ul li {
         float: none;
     }
+
     #header-lower_menu-wrapper ul ul a {
         /* You should always specify line-height as a unitless number, (1, 1.5, 2, etc.) */
         line-height: 120%;
         padding: 10px 15px
     }
+
     #header-lower_menu-wrapper ul ul ul {
         top: 0;
         left: 100%
     }
+
     #header-lower_menu-wrapper ul li:hover>ul {
         display: block
     }
-    /*.main-content_wrapper {
-        max-width: 100%;
-        margin: 0 auto;
-        padding-top: 20px
-    }*/
 
 
     /********************************************/
     /***************    7. LEFT NAV   **********/
     /********************************************/
 
-    .body_container, .left-nav_container {
+    .body_container .left-nav_container {
         color: black;
-        background-color: #e4dfdf;
         display: inline-flex;
+        background-color: #e4dfdf;
+
     }
 
     .left-nav_container .left-nav_content {
@@ -420,19 +451,22 @@ footer bottom
         width: 200px;
     }
     .left-nav_label {
-        padding: 10px 10px 7px 20px;
+        padding: 10px 10px 0 20px;
         color: #175aa7;
-        display: inline-block;
+        border-bottom: 5px solid #17a2a7 !important;
+        /*display: inline-block;
         position: relative;
         top: -25px;
-        left: 25px;
-        font-size: 22px !important;
+        left: 25px;*/
+        text-align: center;
+        font-size: 26px !important;
         font-weight: bold !important;
         text-transform: capitalize;
     }
+
     .left-nav_divider-bar {
         width: 260px;
-        height: 15px;
+        height: 5px;
         position: relative;
         left: -30px;
         top: -30px;
@@ -446,30 +480,31 @@ footer bottom
 
 a{
  color:#a7175a;
+ font-family: "LatoMedium";
 }
 
-   .body_wrapper{
+   .body_container{
        display: -webkit-flex;
        display: -ms-flexbox;
        display: flex;
-       overflow: hidden;
+       /*overflow: hidden;*/
        max-width: 1600px;
        margin: 0 auto;
        margin-top: 80px;
        margin-bottom: 80px;
+        background-color: #e4dfdf;
    }
 
-   .body_container .body_content_right {
+   .body_container .body_content-right {
         margin: 40px 40px 40px 20px;
         background-color: white;
-        padding: 50px;
+        padding: 30px 100px 50px 100px;
         /*font-family: 'LatoMedium', Verdana, sans-serif;*/
         font-family: 'LatoMedium';
         font-size: 18px;
         line-height: 1.4;
         border-radius: 6px;
-        color: #525d67;
-    }
+   }
 
     @font-face{
    	font-family: 'LatoMedium';
@@ -479,7 +514,17 @@ a{
    	     url('Lato-Medium-webfont.svg#webfont') format('svg');
    }
 
-    a:link.title-block {
+   .page-title{
+    padding: 10px 10px 2px 10px;
+    color: #175aa7;
+    border-bottom: 5px solid #17a2a7 !important;
+    /*display: inline-block;*/
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+   }
+
+    a:link.sub-title {
         padding: 10px 10px 0 10px;
         color: #175aa7 !important;
         border-bottom: 5px solid #17a2a7 !important;
@@ -488,7 +533,8 @@ a{
         font-weight: bold;
     }
 
-    .title-block {
+
+     .sub-title{
      padding: 10px 10px 0 10px;
      color: #175aa7;
      border-bottom: 5px solid #17a2a7 !important;
@@ -497,9 +543,24 @@ a{
      font-weight: bold;
     }
 
+    .sub_sub-title{
+    padding: 10px 10px 0 10px;
+    margin-left: 80px;
+    color: #175aa7;
+    border-bottom: 5px solid #17a2a7 !important;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+   }
+
+
+
+
     /********************************************/
     /*******    9. HOMEPAGE CONTENT    **********/
     /********************************************/
+
+
     .blog_title {
         margin: 20px 0 20px 0;
         line-height: 2;
@@ -508,24 +569,27 @@ a{
         font-weight: bold;
         text-transform: uppercase;
     }
-    .blog-twitter_wrapper{
+
+    .body_container_homepage{
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         overflow: hidden;
         max-width: 1600px;
         margin: 0 auto;
-        margin-top: 80px;
-        margin-bottom: 80px;
+        clear: both;
+        /*margin-top: 80px;
+        margin-bottom: 80px;*/
     }
-    .blog-twitter_container {
+
+    .body_wrapper_homepage {
         color: black;
         background-color: #e4dfdf;
         display: inline-flex;
         width: 50%;
     }
 
-    .blog-twitter_container .blog-twitter_content-left {
+    .body_container_homepage .homepage_content-left {
         /*  Different margins for left/right content wrappers needed to avoid a center margin that is "double-wide" since using flexbox on a parent element disables margin collapsing for its child elements  */
         margin: 40px 20px 40px 40px;
         background-color: white;
@@ -536,7 +600,8 @@ a{
         border-radius: 6px;
         flex: 1;
     }
-    .blog-twitter_container .blog-twitter_content-right {
+
+    .body_container_homepage .homepage_content-right {
         margin: 40px 40px 40px 20px;
         background-color: white;
         padding: 50px;
@@ -547,94 +612,32 @@ a{
     }
 
 
-    /*#measurementAndAuto {
-        padding-right: 10px;
-    }*/
-    /*#tablets {
-        padding-bottom: 20px;
-    }*/
-    /*.searchDropdownContainer {
-        margin: 0 auto;
-        max-width: 1600px;
-    }*/
-
-
-
-
     A:link.link--white {
         color: white;
     }
+
     A:link.link--white:hover {
         color: #aaaaaa;
     }
+
     A.link--white:hover {
         color: #aaaaaa;
     }
-/*}*/
 
 
+    /*******************************************/
+    /****** 10. ABOUT PAGE CONTENT *****/
+    /*******************************************/
 
-
-/*******************************************/
-/****** MEDIA QUERIES (RESPONSIVENESS) *****/
-/*******************************************/
-
-/*******************************************/
-/*********** for desktop devices ************/
-/*******************************************/
-
-@media screen and (min-width: 769px) {
-    body {
-        /*background: #becddd;*/
-        height: 100%;
-        /*max-width: 1600px;*/
-        margin: 0 auto !important;
-        float: none !important;
-        /*border-left: 1px solid black;
-        border-right: 1px solid black;*/
+.about-page_images{
+    -webkit-box-shadow: 0px 0px 74px -6px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 0px 74px -6px rgba(0,0,0,0.46);
+    box-shadow: 0px 0px 74px -6px rgba(0,0,0,0.46);
+    float: right;
+    width: 70%;
+    margin-left: 20px;
     }
-    #container {
-        clear: both;
-        float: none;
-        margin: 0 auto !important;
-        width: 100%;
-        min-height: 100%;
-    }
-    #main {
-        margin: 0;
-        /*overflow: auto;
-        padding-bottom: 50px;*/
-    }
-   }
 
-
-/*******************************************/
-/********* for tablet devices **************/
-/*******************************************/
-
-@media screen and (max-width: 1024px) {
-    body {
-        background: green;
-    }
-    .extraHomepageImages {
-        display: none;
-    }
-}
-
-/*******************************************/
-/*********** for mobile devices ************/
-/*******************************************/
-
-/*  CONSIDER HAVING NO SLIDERS IN PHONE VIEW VIEW */
-
-@media screen and (max-width: 414px) {
-    body {
-        background: orange;
-    }
-    .extraHomepageImages {
-        display: none;
-    }
-}
 
 
 /*******************************************
@@ -695,23 +698,22 @@ IMG {
 A:link {
     BORDER-BOTTOM: medium none;
     BORDER-LEFT: medium none;
-    FONT-FAMILY: Verdana, Arial, sans-serif;
+    /*FONT-FAMILY: Verdana, Arial, sans-serif;*/
     /*COLOR: #003;*/
-    color: #a7175a;
     /*FONT-SIZE: 11px;*/
-    font-family: "LatoMedium";
     BORDER-TOP: medium none;
     FONT-WEIGHT: normal;
     BORDER-RIGHT: medium none;
     text-decoration: none;
 }
+a:hover{
+ color: #175aa7;
+}
 
-A:visited {
+/*A:visited {
     BORDER-BOTTOM: medium none;
     BORDER-LEFT: medium none;
     FONT-FAMILY: Verdana, Arial, sans-serif;
-    /*COLOR: #036;*/
-    /*color: #a7175a;*/
     FONT-SIZE: 11px;
     BORDER-TOP: medium none;
     FONT-WEIGHT: normal;
@@ -739,7 +741,7 @@ A:active {
     FONT-WEIGHT: bolder;
     BORDER-RIGHT: medium none;
     text-decoration: none;
-}
+}*/
 
 .bodytext {
     FONT-FAMILY: Verdana, Arial, sans-serif;
@@ -1732,4 +1734,141 @@ a.info:hover span {
     background-color: #ffffff;
     color: #000;
     text-align: center;
+}
+
+/*******************************************/
+/****** MEDIA QUERIES (RESPONSIVENESS) *****/
+/*******************************************/
+
+
+/*******************************************/
+/*********** LARGE SCREENS *****************/
+/*******************************************/
+@media screen and (min-width: 1601px){
+
+ body {
+   color: pink;
+   font-size: 11px;
+}
+
+ /*.body_content-right_text-width{
+  width: 70%;
+  margin: 0 auto;
+  background-color: pink;
+ }*/
+
+}
+
+
+/********************************************/
+/*********** DESKTOPS & LAPTOPS  ************/
+/********************************************/
+/*"If device width is greater than or equal to 769px, but less than or equal to 1524px, then do {...}" */
+
+@media screen and (min-width: 1031px)  and (max-width: 1600px){
+    body {
+      color: orange;
+      font-size: 11px;
+    }
+
+    #container {
+        clear: both;
+        float: none;
+        margin: 0 auto !important;
+        /*width: 100%;*/
+        min-height: 100%;
+    }
+
+    #main {
+        margin: 0;
+        /*overflow: auto;
+        padding-bottom: 50px;*/
+    }
+
+    /*.body_content-right_text-width{
+     width: 80%;
+     /*width: 100%;
+     margin: 0 auto;
+     background-color: grey;
+    }*/
+   }
+
+
+/*******************************************/
+/**************** TABLETS ******************/
+/*******************************************/
+
+@media screen and (min-width: 768px) and (max-width: 1030px) {
+    body {
+    color: green;
+    }
+
+    .extraHomepageImages {
+        display: none;
+    }
+
+    .header-upper_phonenum{
+  /*padding-right: 40%;*/
+  /*margin-right: 130px;*/
+    }
+
+    #header-upper_dropdown-search_wrapper {
+        height: 40px;
+        width: 300px;
+        margin-top: 29px;
+        /*position: relative;*/
+        right: 23px;
+    }
+
+    .wdl-logo {
+     width: 158px;
+    }
+
+    .wdl-logo_wrapper {
+     padding-left: 25px;
+    }
+
+    .header-lower_menu#header-lower_menu-wrapper {
+        width: 565px;
+        margin-left: 25%;
+        display: inline-block;
+        margin-top: -20px;
+    }
+
+    .header-lower_menu#header-lower_menu-wrapper>ul>li>a {
+        padding-left: 19px;
+        font-size: 16px;
+       }
+
+    .body_container .body_content-right {
+         padding: 30px 50px 50px 50px;
+         margin: 30px 20px 20px 20px;
+         }
+
+    /*.body_content-right_text-width{
+     width: 90%;
+     margin: 0 auto;
+     background-color: yellow;
+    }*/
+
+    .left-nav_container .left-nav_content {
+        margin: 30px 20px 20px 20px;
+        width: 200px;
+    }
+}
+
+/*******************************************/
+/*********** SMARTPHONES ************/
+/*******************************************/
+
+@media screen and (max-width: 767px) {
+    body {
+        color: purple;
+    }
+    .body_container{
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto;
+    }
 }
