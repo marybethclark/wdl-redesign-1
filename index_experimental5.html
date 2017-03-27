@@ -1,5 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> -->
 
 
 <head>
@@ -9,24 +12,30 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script src="https://use.fontawesome.com/9dec5ebac8.js"></script>
 
-    <!-- ****  SLIPPRY IMAGE CAROUSEL SLIDER **** -->
-    <!-- NEED TO USE OLDER VERSION OF JQUERY LIB FOR LARGER SLIDER TO WORK-->
-     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-    <script src="/js/slippry.js"></script>
+
+    <!-- NEED TO USE OLDER VERSION OF JQUERY LIB (1.10.2) FOR SLIPPRY TO WORK-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- ****  SLIPPRY IMAGE CAROUSEL/SLIDER **** -->
     <link rel="stylesheet" href="css/slippry.css" />
+    <script src="/js/slippry.js"></script>
 
 
     <!--  FLEXISEL IMAGE CAROUSEL SLIDER -->
-    <script src="js/jquery.flexisel.js"></script>
     <link rel="stylesheet" href="css/flexisel.css" type="text/css" />
+    <script src="js/jquery.flexisel.js"></script>
 
-    <link rel="stylesheet" href="css/emjembedded.css">
+
+
+    <link rel="stylesheet" href="css/styles_TEST_WDL_v2.css">
     <link rel="stylesheet" href="css/footer_redesign.css">
     <link rel="stylesheet" href="css/cart-styles.css">
 
-    <!-- IS THIS NECESSARY FOR NEW SITE?  -->
-    <link rel='stylesheet' href='http://www.wdlsystems.com/core/styles/pagestyles.nl?ct=100&bglt=E6EDF5&bgmd=E6EDF5&bgdk=677789&bgon=013875&bgoff=52add9&bgbar=013875&tasktitletext=dedede&crumbtext=dedede&headertext=dedede&ontab=000000&offtab=ffffff&text=000000&link=000000&bgbody=FFFFFF&bghead=FFFFFF&portlet=3583b5&portletlabel=ffffff&bgbutton=FFE599&bgrequiredfld=FFFFE5&font=Arial%2CHelvetica%2Csans-serif&size_site_content=9pt&size_site_title=9pt&size=1.0&nlinputstyles=T&accessibility=F&NS_VER=2016.2.0'>
+
+    <!--   FAVICON  -->
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
 
 </head>
 
@@ -36,18 +45,19 @@
 <body link="black" vlink="black">
     <div id="container">
 
+
+        <!-- WDL v2.0 TEST: Start Logo and Tabs -->
         <!-- HEADER -->
-        <div id="container">
+        <div>
             <div class="header-upper_wrapper">
                 <div class="header-upper_content">
 
-                 <div class="header-upper_icons">
-                     <ul>
-                         <li>
-                          <li class= "header-upper_phonenum" style= "font-size: 25px; padding-top: 7px; font-weight:100;" >1.800.548.2319
-                          </li>
-                     </ul>
-                 </div>
+                    <div class="header-upper_icons">
+                        <ul>
+                            <li class="header-upper_phonenum" style="font-size: 25px; padding-top: 7px; font-weight:100;">1.800.548.2319
+                            </li>
+                        </ul>
+                    </div>
 
 
                     <!-- DROPDOWN SEARCH BOX -->
@@ -60,18 +70,17 @@
                                         <form class='sample-form' method="post" name="searchportlet" id="searchportlet" onsubmit="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;">
                                             <div>
                                                 <!-- INLINE STYLING FOR INPUT NEEDED TO OVERRIDE OTHER STYLING -->
-                                                <input type="text" style="font-family:Arial, FontAwesome; color:black; font-size: 16px; width: 239px; height: 21px; font-style: italic; border-radius: 3px 0 0 3px;" id=" search" placeholder="  product, brand, category, etc.     " name="search" value="">
+                                                <input id="search-box_input" type="text" placeholder="  product, brand, category, etc.     " name="search" value="">
 
-                                                <input id="search-button--green" type="submit" class="fa fa-search fa-lg" value="&#xf002;" name="search_submit" alt="search" onclick="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;return false;">
+                                                <input type="submit" class="search-button fa fa-search fa-lg" value="&#xf002;" name="search_submit" alt="search" onclick="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;return false;">
                                             </div>
                                         </form>
                                     </div>
                                 </div>
                             </li>
 
-                            <li class="header-upper_text"  aria-hidden="true" aria-label="search this website" title="search website">search</li>
+                            <li class="header-upper_text" aria-hidden="true" aria-label="search this website" title="search website">search</li>
                         </ul>
-
                     </div>
 
                     <div class="header-upper_icons">
@@ -80,9 +89,8 @@
                                 <a href="mailto:sales@wdlsystems.com">
                                     <i class="fa fa-envelope fa-3x" aria-hidden="true" aria-label="email WDL" title="email WDL"></i></a>
                             </li>
-                            <li class="header-upper_text" >Email</li>
+                            <li class="header-upper_text">Email</li>
                         </ul>
-
                     </div>
 
                     <div class="header-upper_icons">
@@ -92,7 +100,7 @@
                                     <i class="fa fa-home fa-3x" aria-hidden="true" aria-label="go to home page" title="go to home page"></i>
                                 </a>
                             </li>
-                            <li class="header-upper_text" >Home</li>
+                            <li class="header-upper_text">Home</li>
                         </ul>
                     </div>
 
@@ -113,14 +121,11 @@
                                 <a href="https://checkout.netsuite.com/app/center/nlvisitor.nl/c.3401285/sc.6/.f">
                                     <i class="fa fa-user fa-3x " aria-hidden="true" aria-label="account" title="Go to my account"></i></a>
                             </li>
-                            <li class="header-upper_text" >Account</li>
+                            <li class="header-upper_text">Account</li>
                         </ul>
                     </div>
                 </div>
             </div>
-
-
-            <!-- WDL v2.0 TEST: Start Logo and Tabs -->
 
             <div class="header-lower_stripe">
                 <div class="header-lower_container">
@@ -204,7 +209,8 @@
                                 </li>
 
                                 <!-- ALWAYS VISIBLE LEVEL -->
-                                <li><a href="http://www.wdlsystems.com/vendors/vendors.html">MANUFACTURERS </a></li>
+                                <li><a href="pages/manufacturers.html
+">MANUFACTURERS </a></li>
 
                                 <!-- ALWAYS VISIBLE LEVEL -->
                                 <li><a href="#">COMPANY <span class="header-lower_menu-arrow">&#9660;</span></a>
@@ -212,12 +218,12 @@
                                     <!-- FIRST LEVEL DROPPED DOWN-->
                                     <ul class="header-lower_sub-menu">
 
-                                        <li><a href="http://www.wdlsystems.com/about/profile.html">About</a>
+                                        <li><a href="pages/about.html">About</a>
                                         </li>
 
-                                        <li><a href="http://www.wdlsystems.com/contact/contact.html">Contact</a></li>
+                                        <li><a href="pages/contact.html">Contact</a></li>
 
-                                        <li><a href="http://www.wdlsystems.com/help/help.html">Support</a></li>
+                                        <li><a href="pages/support.html">Support</a></li>
 
                                         <li><a href="http://www.wdlsystems.com/news/tradeshows.html">Events</a></li>
 
@@ -235,7 +241,7 @@
                         </nav>
                     </div>
                 </div>
-                <!-- BELOW CLOSES  lowerHeaderWrapper-->
+
             </div>
             <!-- BELOW CLOSES HEADER -->
         </div>
@@ -251,87 +257,93 @@
         <!-- js-slippry id is needed for javascript -->
         <ul id="js-slippry">
 
-            <li title="SEO-Friendly Text <a href='http://slippry.com/examples/out-of-the-box/'>Even with links!</a>">
-                <a href="#slide1"><img src="images/slippry_1.jpg" alt="demo1_1"></a>
+
+            <!--  CAPTIONS FOR SLIDES COME FROM IMG's TITLE VALUE
+   TO STYLE CAPTIONS, USE CLASS "sy-caption-wrap" IN slippry.css FILE-->
+            <li>
+                <img src="images/slippry_2.jpg" alt="" title="">
             </li>
 
-            <li title="Each slide gets one in same location.">
-                <a href="#slide2"><img src="images/slippry_2.jpg" alt="demo1_2"></a>
+            <li>
+                <img src="images/slippry_1.jpg" alt="" title="">
             </li>
 
         </ul>
         <!-- ****  END slippry IMAGE CAROUSEL  **** -->
 
 
-            <!-- ****  BEGIN FLEXISEL IMAGE CAROUSEL **** -->
-            <div class="flexisel_container">
-                <div class="flexisel_inner">
-                    <!-- CLEARING FLOATS DOESN'T SEEM TO BE NEEDED -->
-                    <div class="clearout"></div>
-                    <!-- flexisel2 id needed for JavaScript -->
-                    <ul id="flexisel2" class="flexisel_ul" style="left: -256px; display: block;">
+        <!-- ****  BEGIN FLEXISEL IMAGE CAROUSEL **** -->
+        <div class="flexisel_container">
+            <div class="flexisel_inner">
+                <!-- CLEARING FLOATS DOESN'T SEEM TO BE NEEDED -->
+                <div class="clearout"></div>
+                <!-- flexisel2 id needed for JavaScript -->
+                <ul id="flexisel2" class="flexisel_ul" style="left: -256px; display: block;">
 
-                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_1.jpg"></li>
+                    <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_1.jpg"></li>
 
-                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_2.jpg"></li>
+                    <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_2.jpg"></li>
 
-                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_3.jpg"></li>
+                    <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_3.jpg"></li>
 
-                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_4.jpg"></li>
+                    <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_4.jpg"></li>
 
-                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_5.jpg">
-                         <div class="flexisel_image-text_wrapper">
-                          <span><p>
+                    <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_5.jpg">
+                        <div class="flexisel_image-text_wrapper">
+                            <span><p>
                       Manage media processing challenges in the Cloud Era using <a href="#">Media Cloud Server</a>.</p></span>
-                         </div></li>
+                        </div>
+                    </li>
 
-                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_6.jpg">
-                         <div class="flexisel_image-text_wrapper"><span><p>
-                       ADLINK SEMA Cloud and Mini-ITX boards to optimize vending machine business<br /><a href="#">LEARN MORE</a></p></span></div></li>
+                    <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_6.jpg">
+                        <div class="flexisel_image-text_wrapper"><span><p>
+                       ADLINK SEMA Cloud and Mini-ITX boards to optimize vending machine business<br /><a href="#">LEARN MORE</a></p></span></div>
+                    </li>
 
-                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_7.jpg"><div class="flexisel_image-text_wrapper"><span><p>
-                       Extensive VPX Products Portfolio-Processor Blades, GPU Blades &amp; XMC Modules</p></span></div></li>
+                    <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_7.jpg">
+                        <div class="flexisel_image-text_wrapper"><span><p>
+                       Extensive VPX Products Portfolio-Processor Blades, GPU Blades &amp; XMC Modules</p></span></div>
+                    </li>
 
-                        <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_8.jpg"></li>
-                    </ul>
-                    <!-- REMOVING THIS code ELIMINATES THE DUPLICATE header-lower_menu ARROWS -->
-                    <!-- <div class="nbs-flexisel-nav-left" style="top: 21.5px;"></div>
+                    <li class="flexisel_item"><img src="images/homepage_slider_small/small_slider_8.jpg"></li>
+                </ul>
+                <!-- REMOVING THIS code ELIMINATES THE DUPLICATE header-lower_menu ARROWS -->
+                <!-- <div class="nbs-flexisel-nav-left" style="top: 21.5px;"></div>
                    <div class="nbs-flexisel-nav-right" style="top: 21.5px;"></div> -->
+            </div>
+            <!-- CLOSE FLEXISEL CONTAINER BELOW-->
+        </div>
+
+
+        <div class="body_container_homepage">
+            <div class="body_wrapper_homepage">
+                <div class="homepage_content-left">
+
+                    <h2><a class="sub-title link--white" href="#">LATEST BLOG POST</a></h2>
+
+                    <h2 class="blog_title">I have to push the pram a lot.</h2>
+                    <div>
+                        <p>The swallow may fly south with the sun, and the house martin or the plover may seek warmer climes in winter, yet these are not strangers to our land. The nose? And the hat. She's a witch! Listen. Strange women lying in ponds distributing
+                            swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.</p>
+                        <p>Did you dress her up like this? Listen. Strange women lying in ponds distributing swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.
+                        </p>
+                        ...<b><a style="font-weight:bold; font-size:16px;" href="#" target="_blank">MORE</a></b></div>
                 </div>
-                <!-- CLOSE FLEXISEL CONTAINER BELOW-->
+
+            </div>
+            <div class="body_wrapper_homepage">
+                <div class="homepage_content-right">
+
+                    <h2><a class="sub-title link--white" href="http://www.wdlsystems.com/news/press/2016/3SR-P-InnoDisk.html">TWITTER</a></h2>
+
+                    <a class="twitter-timeline" data-width="578" data-height="384" href="https://twitter.com/wdlsystems">Tweets by wdlsystems</a>
+
+                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
             </div>
 
-
-            <div class="body_container_homepage">
-                <div class="body_wrapper_homepage">
-                    <div class="homepage_content-left">
-
-                        <h2><a class="sub-title link--white" href="#">LATEST BLOG POST</a></h2>
-
-                        <h2 class="blog_title">I have to push the pram a lot.</h2>
-                       <div>
-                            <p>The swallow may fly south with the sun, and the house martin or the plover may seek warmer climes in winter, yet these are not strangers to our land. The nose? And the hat. She's a witch! Listen. Strange women lying in ponds
-                                distributing swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.</p>
-                            <p>Did you dress her up like this? Listen. Strange women lying in ponds distributing swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic
-                                ceremony.
-                            </p>
-                            ...<b><a style="font-weight:bold; font-size:16px;" href="#" target="_blank">MORE</a></b></div>
-                    </div>
-
-                </div>
-                <div class="body_wrapper_homepage">
-                    <div class="homepage_content-right">
-
-                        <h2><a class="sub-title link--white" href="http://www.wdlsystems.com/news/press/2016/3SR-P-InnoDisk.html">TWITTER</a></h2>
-
-                        <a class="twitter-timeline" data-width="578" data-height="384" href="https://twitter.com/wdlsystems">Tweets by wdlsystems</a>
-
-                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-                </div>
-
- <!--  CLOSES body_container_homepage -->
-            </div>
+            <!--  CLOSES body_container_homepage -->
+        </div>
 
     </div>
 
@@ -367,7 +379,8 @@
 
                         <div><span>WDL Systems</span></div>
                         <div><span>220 Chatham Business Drive</span></div>
-                        <div><span>Pittsboro, North Carolina 27312</span></div>
+                        <div><span>Pittsboro, NC
+ 27312-5603</span></div>
                         <div><span>USA</span></div>
                         <div><span>1.800.548.2319</span></div>
 
@@ -390,9 +403,9 @@
                         </div>
                         <div><a href="#">Press Releases</a></span>
                         </div>
-                        <div><a href="#">Our Manufacturers</a></span>
+                        <div><a href="pages/manufacturers.html">Our Manufacturers</a></span>
                         </div>
-                        <div><a href="#">Support</a></span>
+                        <div><a href="pages/support.html">Support</a></span>
                         </div>
                     </div>
 
@@ -434,8 +447,8 @@
                             </div>
                             <div id="previewWrapper" style="text-align:center">
 
-                                <div id="LanguageDropdown" class="LanguageDropdown">
-                                </div>
+                                <!-- <div id="LanguageDropdown" class="LanguageDropdown">
+                                </div> -->
 
                                 <div id="formContainer" class="formContainer">
                                     <div id="SignupFormPreview" class="SignupFormPreview">
@@ -459,12 +472,10 @@
 
                                     <div id="FooterPreview" class="SignupFormPreview"></div>
 
-                                    <div id="btnSection">
-
-                                        <div class="footer_newsletter_button_wrapper">
-                                            <input name="SubmitButton" value="Submit" id="SubmitButton" class="footer_newsletter_button-style" type="submit">
-                                        </div>
+                                    <div class="button-hack footer_newsletter_button_wrapper">
+                                        <input name="SubmitButton" value="Submit" id="SubmitButton" class="footer_newsletter_button-style" type="submit">
                                     </div>
+
                                 </div>
                             </div>
                             <input name="FormInfo" id="FormInfo" value="0a896380-bf79-4bbb-a52b-92fe595b5b25" type="hidden">
@@ -475,7 +486,7 @@
                 </div>
             </li>
         </ul>
-        <div class="footer_bar-container">
+        <div class="footer_bar_container">
             <div class="footer_bar_content">
 
                 <ul class="footer_links">
@@ -511,7 +522,7 @@
 
 
     <!-- SLIPPRY CAROUSEL SLIDER -->
- <!-- GO TO http://slippry.com/settings/ FOR CUSTOMIZATION OPTIONS -->
+    <!-- GO TO http://slippry.com/settings/ FOR CUSTOMIZATION OPTIONS -->
     <script>
         jQuery('#js-slippry').slippry({
             // general elements & wrapper
@@ -519,17 +530,30 @@
             adaptiveHeight: false, // height of the sliders adapts to current slide
             start: 1, // num (starting from 1), random
             loop: true, // first -> last & last -> first header-lower_menu-arrows
-            captionsSrc: 'li',
-            captions: 'overlay', // Position: overlay, below, custom, false
+            captionsSrc: 'img', //Options: 'img' or 'el' [img takes caption from alt or title, el takes caption from title of slide element]
+
+            captions: 'false', // Position: overlay, below, custom, false
             captionsEl: '.external-captions',
 
             // transitions
-            transition: 'horizontal', // fade, horizontal, kenburns, false
-            easing: 'linear', // easing to use in the animation [(see... [jquery www])]
+            transition: 'fade', // Options: fade, horizontal, kenburns, false
+            easing: 'linear', // easing to use in the animation
             continuous: true,
 
+            // how long the transition takes to complete
+            //This (10000 milliseconds) is about 10 seconds.
+            speed: 10000,
+
             // slideshow
-            auto: false
+            auto: true,
+
+           //text for the next slide control (important for screen readers)
+            nextText: 'Next',
+
+             //text for the previous slide control (important for screen readers)
+             prevText: 'Previous'
+
+
         });
     </script>
 

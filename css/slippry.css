@@ -70,7 +70,8 @@
 }
 
 .sy-box.sy-loading {
-    background: url("/images/sy-loader.gif") 50% 50% no-repeat;
+
+    background: url("/images/homepage_slider_large/sy-loader.gif") 50% 50% no-repeat;
     -webkit-background-size: 32px 32px;
     background-size: 32px;
     min-height: 40px
@@ -243,24 +244,23 @@
     }
 }
 
+
 /*  positioning & styling of caption overlay text  */
-.sy-caption-wrap {
+
+/*.sy-caption-wrap {
     position: absolute;
-    /*bottom: 2em;*/
     z-index: 12;
-    /*left: 50%*/
     left: 7%;
     bottom: 15%;
     font-size: 30px;
     font-family: "Lato-Medium";
-    /*height: 100px;
-    width:600px;*/
-    /*background-color: black;*/
-}
+  background-color: ;
+}*/
 
 .sy-caption-wrap .sy-caption {
     position: relative;
     left: -50%;
+    background-color: rgb(0, 0, 0);          /*  THE FALLBACK  */
     background-color: rgba(0, 0, 0, 0.54);
     color: #fff;
     padding: 0.4em 1em;

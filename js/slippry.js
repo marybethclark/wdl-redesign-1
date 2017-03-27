@@ -24,7 +24,7 @@
     boxClass: 'sy-list', // class that goes to original element
     elements: 'li', // elments cointaining slide content
     activeClass: 'sy-active', // class for current slide
-    fillerClass: 'sy-filler', // class for element that acts as intrinsic placholder
+    fillerClass: 'sy-filler', // class for element that acts as intrinsic placeholder
     loadingClass: 'sy-loading',
 
     // options

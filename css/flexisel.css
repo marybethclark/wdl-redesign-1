@@ -91,6 +91,7 @@ display:none;
     cursor: pointer;
     z-index: 4;
     top:40%;
+    background: rgb(0,0,0);    /* THE FALLBACK */
     background: rgba(0,0,0,0.5);
     color: #fff;
 }

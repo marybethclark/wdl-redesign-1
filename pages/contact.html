@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 
 
 <head>
@@ -15,17 +15,16 @@
     <script language='JavaScript' type='text/javascript'>
         window.status = '';
     </script>
-    <link rel="stylesheet" href="../css/emjembedded.css">
-    <link rel="stylesheet" href="../css/footer_redesign.css">
-    <link rel="stylesheet" href="../css/cart-styles.css">
+    <link rel="stylesheet" href="/css/styles_TEST_WDL_v2.css">
+    <link rel="stylesheet" href="/css/cart-styles.css">
 
-
-
-
+    <!--   FAVICON  -->
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
 
 
     <!-- IS THIS NECESSARY FOR NEW SITE?  -->
-    <link rel='stylesheet' href='http://www.wdlsystems.com/core/styles/pagestyles.nl?ct=100&bglt=E6EDF5&bgmd=E6EDF5&bgdk=677789&bgon=013875&bgoff=52add9&bgbar=013875&tasktitletext=dedede&crumbtext=dedede&headertext=dedede&ontab=000000&offtab=ffffff&text=000000&link=000000&bgbody=FFFFFF&bghead=FFFFFF&portlet=3583b5&portletlabel=ffffff&bgbutton=FFE599&bgrequiredfld=FFFFE5&font=Arial%2CHelvetica%2Csans-serif&size_site_content=9pt&size_site_title=9pt&size=1.0&nlinputstyles=T&accessibility=F&NS_VER=2016.2.0'>
+    <!-- <link rel='stylesheet' href='http://www.wdlsystems.com/core/styles/pagestyles.nl?ct=100&bglt=E6EDF5&bgmd=E6EDF5&bgdk=677789&bgon=013875&bgoff=52add9&bgbar=013875&tasktitletext=dedede&crumbtext=dedede&headertext=dedede&ontab=000000&offtab=ffffff&text=000000&link=000000&bgbody=FFFFFF&bghead=FFFFFF&portlet=3583b5&portletlabel=ffffff&bgbutton=FFE599&bgrequiredfld=FFFFE5&font=Arial%2CHelvetica%2Csans-serif&size_site_content=9pt&size_site_title=9pt&size=1.0&nlinputstyles=T&accessibility=F&NS_VER=2016.2.0'> -->
 
 </head>
 
@@ -35,16 +34,16 @@
 <body link="black" vlink="black">
     <div id="container">
 
-        <!-- HEADER -->
-        <div class="container">
+        <!-- HEADER (aka: LOGO AND TABS)-->
+        <div class="header_container">
             <div class="header-upper_wrapper">
                 <div class="header-upper_content">
 
                     <div class="header-upper_icons">
                         <ul>
-                            <li>
-                                <li class="header-upper_phonenum">1.800.548.2319
-                                </li>
+
+                            <li class="header-upper_phonenum">1.800.548.2319
+                            </li>
                         </ul>
                     </div>
 
@@ -58,10 +57,9 @@
                                     <div id="slider">
                                         <form class='sample-form' method="post" name="searchportlet" id="searchportlet" onsubmit="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;">
                                             <div>
-                                                <!-- INLINE STYLING FOR INPUT NEEDED TO OVERRIDE OTHER STYLING -->
-                                                <input type="text" style="font-family:Arial, FontAwesome; color:black; font-size: 16px; width: 239px; height: 21px; font-style: italic; border-radius: 3px 0 0 3px;" id=" search" placeholder="  product, brand, category, etc.     " name="search" value="">
+                                                <input type="text" id="search-box_input" placeholder="  product, brand, category, etc.     " name="search" value="">
 
-                                                <input id="search-button--green" type="submit" class="fa fa-search fa-lg" value="&#xf002;" name="search_submit" alt="search" onclick="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;return false;">
+                                                <input type="submit" class="search-button fa fa-search fa-lg" value="&#xf002;" name="search_submit" alt="search" onclick="window.location.href='/s.nl?sc=22&amp;category=&amp;search='+escape(document.forms['searchportlet'].elements['search'].value);return false;return false;">
                                             </div>
                                         </form>
                                     </div>
@@ -72,7 +70,6 @@
                         </ul>
 
                     </div>
-
                     <div class="header-upper_icons">
                         <ul>
                             <li>
@@ -119,13 +116,13 @@
             </div>
 
 
-            <!-- WDL v2.0 TEST: Start Logo and Tabs -->
+            <!-- TEST - WDL Systems v2.0: Start Logo and Tabs -->
 
             <div class="header-lower_stripe">
                 <div class="header-lower_container">
                     <div class="wdl-logo_wrapper">
-                        <a href="/wdlsystems">
-                            <IMG class="wdl-logo" src="../images/headers/wdl_logo.gif" border=0 alt="WDL systems">
+                        <a href=../index_TEST_WDL_v2.html>
+                            <IMG class="wdl-logo" src="/images/headers/wdl_logo.gif" border=0 alt="WDL systems">
                         </a>
                     </div>
 
@@ -203,7 +200,7 @@
                                 </li>
 
                                 <!-- ALWAYS VISIBLE LEVEL -->
-                                <li><a href="http://www.wdlsystems.com/vendors/vendors.html">MANUFACTURERS </a></li>
+                                <li><a href="manufacturers.html">MANUFACTURERS </a></li>
 
                                 <!-- ALWAYS VISIBLE LEVEL -->
                                 <li><a href="#">COMPANY <span class="header-lower_menu-arrow">&#9660;</span></a>
@@ -211,12 +208,12 @@
                                     <!-- FIRST LEVEL DROPPED DOWN-->
                                     <ul class="header-lower_sub-menu">
 
-                                        <li><a href="http://www.wdlsystems.com/about/profile.html">About</a>
+                                        <li><a href="about.html">About</a>
                                         </li>
 
-                                        <li><a href="http://www.wdlsystems.com/contact/contact.html">Contact</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
 
-                                        <li><a href="http://www.wdlsystems.com/help/help.html">Support</a></li>
+                                        <li><a href="support.html">Support</a></li>
 
                                         <li><a href="http://www.wdlsystems.com/news/tradeshows.html">Events</a></li>
 
@@ -238,7 +235,7 @@
             </div>
             <!-- BELOW CLOSES header_container -->
         </div>
-        <!-- WDL v2.0 TEST: End Logo and Tabs -->
+        <!-- TEST - WDL Systems v2.0: End Logo and Tabs -->
 
 
 
@@ -248,12 +245,12 @@
 
         <div class="body_container">
 
-            <!-- start left nav - Basic : Clean Lines -->
+            <!-- start left nav - TEST - WDL Systems v2.0 -->
 
-            <div class="left-nav_container">
-                <div class="left-nav_content">
+            <div class="nav_container-left">
+                <div class="nav_content-left">
 
-                    <h2 class="left-nav_label link--white">PRODUCTS</h2>
+                    <h2 class="nav_label-left link--white">PRODUCTS</h2>
                     <br />
                     <br />
 
@@ -327,67 +324,81 @@
                 </div>
 
             </div>
-            <!-- end left nav - Basic : Clean Lines -->
+            <!-- end left nav - TEST - WDL Systems v2.0 -->
 
-            <!-- start content area - Basic : Clean Lines -->
+            <!-- start content area - TEST - WDL Systems v2.0 -->
 
-            <div>
-                <div class="body_content-right">
-                    <div>
-                        <h1 class="page-title">CONTACT WDL SYSTEMS</h1>
-                        <br />
-                        <br />
+            <div class="body_container-right"><div>
+                <div class="body_content-right contact-page_content-right">
+                    <div><img src="/images/title_background.jpg" class="page-title_background" width="100%" />
+                        <h1 class="page-title">CONTACT WDL SYSTEMS</h1></div>
 
-                        <h2 class="sub-title link--white">ADDRESS</h2><br /><br />
-                        <span>WDL Systems</span>
-                        <br />
-                        <span>220 Chatham Business Drive</span><br />
-                        <span>Pittsboro, North Carolina 27312
-</span>
-                        <br />
-                        <span>USA</span><br />
 
-                        <br />
-                        <h2 class="sub-title link--white">Remit To ADDRESS</h2><br /><br />
-                        <span>WDL Systems</span>
-                        <br />
-                        <span>PO Box 890030</span>
-                        <br />
-                        <span>Charlotte, North Carolina 28289</span>
-                        <br />
-                        <span>USA</span>
-                        <br />
-                        <br />
+                    <div class="contact-page_flex-container">
+                        <div class="contact-page_flex-item">
+                            <h2 class="sub-title link--white">PHONE</h2><br /><br />
+                            <span>Toll Free: 1.800.548.2319</span><br />
+                            <span>Local: 919.545.2500</span><br />
+                            <span>Fax: 919.545.2559</span><br />
+                            <br />
+                            <span> HOURS: Monday-Friday,</span><br />
+                            <span>8:30 am - 5:30 pm, EST</span><br />
 
-                        <h2 class="sub-title link--white">PHONE</h2><br /><br />
-                        <span>Toll Free: 1-800-548-2319</span><br />
-                        <span>Local: 919-545-2500</span><br />
-                        <span>Fax: 919-545-2559</span><br />
-                        <br />
-                        <h2 class="sub-title link--white">EMAIL</h2>
-                        <br />
-                        <br />
-                        <span><a href="mailto:sales@wdlsystems.com">sales@wdlsystems.com</a></span>
-                        <span>
-                          <br />
-                          <a href="mailto:support@wdlsystems.com">support@wdlsystems.com</a></span>
-                        <br />
-                        <p style="visibility: hidden;">
+                        </div>
 
-                            spacer text spacer text spacer text spacer text spacer text spacer text spacer text cspacer text spacer text spacer text spacer text spacer text </p>
+                        <div class="contact-page_flex-item">
+                            <h2 class="sub-title link--white">EMAIL</h2>
+                            <br />
+                            <br />
+                            <span><a href="mailto:sales@wdlsystems.com">sales@wdlsystems.com</a></span>
+                            <span>
+   <br />
+   <a href="mailto:support@wdlsystems.com">support@wdlsystems.com</a></span>
+                            <br />
+                        </div>
 
+
+                        <div class="contact-page_flex-item">
+                            <h2 class="sub-title link--white">ADDRESS</h2><br /><br />
+                            <span>WDL Systems</span>
+                            <br />
+                            <span>220 Chatham Business Drive</span><br />
+                            <span>Pittsboro, NC 27312-5603</span>
+                            <br />
+                            <span>USA</span><br />
+                        </div>
+
+
+                        <div class="contact-page_flex-item">
+                            <h2 class="sub-title link--white">Remit To ADDRESS</h2><br /><br />
+                            <span>WDL Systems</span>
+                            <br />
+                            <span>PO Box 890030</span>
+                            <br />
+                            <span>Charlotte, NC 28289-0030</span>
+                            <br />
+                            <span>USA</span>
+                        </div>
+
+                        <!-- CLOSES contact-page_flex-container -->
                     </div>
+
+                    <!-- CLOSES body_content-right contact-page_content-right -->
                 </div>
 
+                <!-- CLOSES body_container-right -->
             </div>
 
-            <!--  CLOSES body_container -->
+            <!-- CLOSES body_container -->
         </div>
 
+        <!--  CLOSES container -->
     </div>
 
+    <!-- </div> -->
+
     <!-- DO WE NEED THIS HIT TRACKER SCRIPT ON NEW SITE? -->
-    <script>
+    <!-- <script>
         var i = new Image();
         i.src = '/app/site/hit/tracker.nl?c=3401285&n=1&type=page&siteroot=Live+Hosting+Files&url=%2Findex.html&referer=' + escape(document.referrer);
         i.onload = function() {
@@ -397,19 +408,24 @@
         function nsVoid() {
             return;
         };
-    </script>
-
-    <!--BELOW CLOSES  mainContentWrapper-->
+    </script> -->
 
 
-    <!-- end content area - Basic : Clean Lines -->
+    <!-- end  content area - TEST - WDL Systems v2.0 -->
 
 
 
-    <!-- WDL v2.0 TEST: Start Footer -->
 
-    <footer>
-        <ul>
+
+    <!-- TEST - WDL Systems v2.0: Start Footer -->
+
+
+
+    <div class= "footer-v2">
+
+<div class= "footer_upper_container">
+
+        <ul >
 
             <!-- three footer columns are here -->
             <li>
@@ -419,15 +435,16 @@
 
                     <div>
 
-                        <div><span>WDL Systems</span></div>
-                        <div><span>220 Chatham Business Drive</span></div>
-                        <div><span>Pittsboro, North Carolina 27312</span></div>
-                        <div><span>USA</span></div>
-                        <div><span>1.800.548.2319</span></div>
+                        <div>WDL Systems</div>
+                        <div>220 Chatham Business Drive</div>
+                        <div>Pittsboro, NC 27312-5603
+                        </div>
+                        <div>USA</div>
+                        <div>1.800.548.2319</div>
 
-                        <div><span>Sales: <a href="mailto:sales@wdlsystems.com">sales@wdlsystems.com</a></span></div>
+                        <div>Sales: <a href="mailto:sales@wdlsystems.com">sales@wdlsystems.com</a></div>
 
-                        <div><span>Support: <a href="mailto:support@wdlsystems.com">support@wdlsystems.com</a></span></div>
+                        <div>Support: <a href="mailto:support@wdlsystems.com">support@wdlsystems.com</a></div>
 
                     </div>
                 </div>
@@ -438,15 +455,16 @@
                     <h4>LINKS</h4>
 
                     <div>
-                        <div><span><a href="#">Promotions</a></span>
+                        <div><a href="#">Promotions</a>
                         </div>
-                        <div><a href="#">Trade Shows</a></span>
+                        <div><a href="#">Trade Shows</a>
                         </div>
-                        <div><a href="#">Press Releases</a></span>
+                        <div><a href="#">Press Releases</a>
                         </div>
-                        <div><a href="#">Our Manufacturers</a></span>
+                        <div><a href="manufacturers.html
+">Our Manufacturers</a>
                         </div>
-                        <div><a href="#">Support</a></span>
+                        <div><a href="support.html">Support</a>
                         </div>
                     </div>
 
@@ -462,11 +480,11 @@
                     <div class="footer_newsletter_tagline">The Embedded Products Source.</div>
 
                     <div class="footer_newsletter-input_wrapper">
+
                         <form novalidate name="previewForm" method="post" action="https://secure.campaigner.com/CSB/Public/ProcessHostedForm.aspx" id="previewForm" enctype="multipart/form-data" target="_blank">
 
-
                             <script>
-                                //<![cdata[
+
                                 var theForm = document.forms['previewForm'];
                                 if (!theForm) {
                                     theForm = document.previewForm;
@@ -479,7 +497,7 @@
                                         theForm.submit();
                                     }
                                 }
-                                //]]>
+
                             </script>
 
                             <div>
@@ -488,39 +506,23 @@
                             </div>
                             <div id="previewWrapper" style="text-align:center">
 
-                                <div id="LanguageDropdown" class="LanguageDropdown">
-                                </div>
+                                <!-- <div id="LanguageDropdown" class="LanguageDropdown">
+                                </div> -->
 
                                 <div id="formContainer" class="formContainer">
                                     <div id="SignupFormPreview" class="SignupFormPreview">
-                                        <table id="FormFieldsTable" cellpadding="0" cellspacing="0">
-                                            <tr id="Email4308438" align="left">
-                                                <td>
-
-                                                </td>
-                                                </td>
-                                                <td></td>
-                                                <td><input class="input-box" placeholder="     Enter your email." name="4308438" maxlength="4000" id="4308438" class="required email" contactattributeid="4308438" style="width:200px;" type="text"></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                        </table>
+                                        <input class="input-box" placeholder="     Enter your email." name="4308438" maxlength="4000" id="4308438" class="required email" contactattributeid="4308438" style="width:200px;" type="text">
                                     </div>
-
-
 
                                     <div id="FooterPreview" class="SignupFormPreview"></div>
 
-                                    <div id="btnSection">
-
-                                        <div class="footer_newsletter_button_wrapper">
-                                            <input name="SubmitButton" value="Submit" id="SubmitButton" class="footer_newsletter_button-style" type="submit">
-                                        </div>
+                                    <div class="footer_newsletter_button_wrapper">
+                                        <input name="SubmitButton" value="Submit" id="SubmitButton" class="footer_newsletter_button-style" type="submit">
                                     </div>
+
                                 </div>
                             </div>
+
                             <input name="FormInfo" id="FormInfo" value="0a896380-bf79-4bbb-a52b-92fe595b5b25" type="hidden">
 
                         </form>
@@ -529,6 +531,7 @@
                 </div>
             </li>
         </ul>
+</div>
         <div class="footer_bar_container">
             <div class="footer_bar_content">
 
@@ -555,17 +558,13 @@
                 <div class="clear"></div>
 
                 <div class="copyright">&copy; 2017 WDL Systems, LLC.</div>
-            </div>
-        </div>
-    </footer>
 
+                <!-- CLOSES footer_bar_content -->
+            </div>
+
+        </div>
 
     </div>
-
-
-
-
-
 
 </body>
 
